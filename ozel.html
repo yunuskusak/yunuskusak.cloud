@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yunus Kuşak | HFT &amp; Siber Güvenlik &amp; Uzay</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="site-header">
+    <h1>HFT · SİBER GÜVENLİK · UZAY</h1>
+    <p>// KUSAK LTD — İlgi Alanlarım &amp; Projelerim //</p>
+</div>
+
+<nav>
+    <a href="index.html">[ Ana Sayfa ]</a>
+    <a href="hakkimda.html">[ Hakkımda ]</a>
+    <a href="resimler.html">[ Resimler ]</a>
+    <a href="iletisim.html">[ İletişim ]</a>
+    <a href="ozel.html">[ Siber Güvenlik ]</a>
+</nav>
+
+<div class="container">
+
+    <!-- İÇİNDEKİLER (sayfa içi bağlantı) -->
+    <h2>&gt; İçindekiler</h2>
+    <div class="terminal">
+        &gt; <a href="#hft">Yüksek Frekanslı Ticaret (HFT)</a><br>
+        &gt; <a href="#mimari">KUSAK V13 Mimari Tablosu</a><br>
+        &gt; <a href="#leo">LEO Uydu Sistemleri — NETA</a><br>
+        &gt; <a href="#siber">Siber Güvenlik</a><br>
+        &gt; <a href="#video">Kaynak Video</a>
+    </div>
+
+    <hr>
+
+    <!-- HFT -->
+    <a name="hft"></a>
+    <h2>&gt; Yüksek Frekanslı Ticaret (HFT)</h2>
+
+    <div class="kart-kutu">
+        <p>
+            Yüksek Frekanslı Ticaret (HFT); karmaşık algoritmalar ve son derece hızlı bilgisayar
+            sistemleri kullanarak piyasada saniyenin milyonda biri düzeyinde işlemler gerçekleştiren
+            bir stratejidir. Bir nanosaniyede (10^-9 saniye) binlerce emir gönderilebilir.<br><br>
+            Bu alanda kritik olan şey yalnızca algoritmanın zekası değil —
+            <b>donanıma ne kadar yakın çalışabildiğinizdir.</b>
+        </p>
+    </div>
+
+    <h3>HFT'de Temel Kavramlar:</h3>
+    <ul type="disc">
+        <li>
+            <b>Düşük Gecikme (Low-Latency)</b>
+            <ul type="circle">
+                <li>Kernel bypass teknikleri (DPDK, RDMA)</li>
+                <li>CPU önbellek optimizasyonu (Cache Locality)</li>
+                <li>TSC donanım zamanlama (CPU cycle sayacı)</li>
+            </ul>
+        </li>
+        <li>
+            <b>Kilit-serbest Yapılar (Lock-free)</b>
+            <ul type="circle">
+                <li>SPSC Ring Buffer (Single Producer Single Consumer)</li>
+                <li>Zero-Heap: dinamik bellek tahsisi yok</li>
+                <li>Zero-Lock: mutex ve semafor yok</li>
+            </ul>
+        </li>
+        <li>
+            <b>Deterministik Yürütme</b>
+            <ul type="circle">
+                <li>Her adım öngörülebilir sürede tamamlanır</li>
+                <li>Garbage Collector yok, tam kontrol</li>
+                <li>Ghost-cancel-safe execution</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <!-- MİMARİ TABLOSU -->
+    <a name="mimari"></a>
+    <h2>&gt; KUSAK V13 — Mimari Tablosu</h2>
+
+    <table border="1" cellpadding="12" cellspacing="0">
+        <tr>
+            <th colspan="3" align="center">KUSAK V13 — TİER-1 HFT MOTORU MİMARİSİ</th>
+        </tr>
+        <tr>
+            <th>Bileşen</th>
+            <th>Teknoloji</th>
+            <th>Amaç</th>
+        </tr>
+        <tr>
+            <td><b>Dil</b></td>
+            <td>Modern C++20</td>
+            <td>Donanım düzeyinde kontrol, sıfır overhead</td>
+        </tr>
+        <tr>
+            <td><b>Veri Yapısı</b></td>
+            <td>SPSC Ring Buffer</td>
+            <td>Kilit-serbest, önbellek dostu kuyruk</td>
+        </tr>
+        <tr>
+            <td><b>Bellek</b></td>
+            <td>Zero-Heap Allocation</td>
+            <td>Deterministik, GC yok</td>
+        </tr>
+        <tr>
+            <td><b>Zamanlama</b></td>
+            <td>TSC (Time Stamp Counter)</td>
+            <td>Nanosaniye hassasiyeti</td>
+        </tr>
+        <tr>
+            <td><b>Yürütme</b></td>
+            <td>Ghost-Cancel-Safe</td>
+            <td>Yüksek oynaklık ortamında bütünlük</td>
+        </tr>
+        <tr>
+            <td><b>Altyapı</b></td>
+            <td>Linux / AWS EC2 optimizasyonu</td>
+            <td>Co-location &amp; düşük gecikmeli bağlantı</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- LEO UYDU -->
+    <a name="leo"></a>
+    <h2>&gt; LEO Uydu Sistemleri — NETA Projesi</h2>
+
+    <div class="kart-kutu">
+        <p>
+            <b>NETA LEO</b>; HFT'de kanıtlanmış ultra-düşük gecikme prensiplerini uzay sektörüne
+            taşıyan bir araştırma-geliştirme projesidir. Alçak Yörüngeli (LEO) uydu ağları için
+            dinamik, yüksek performanslı yönlendirme (routing) motoru tasarlanmaktadır.
+        </p>
+    </div>
+
+    <h3>Proje Hedefleri:</h3>
+    <ol type="1">
+        <li>Mobil terminaller için otonom yönlendirme protokolleri geliştirmek</li>
+        <li>HFT kalitesinde düşük gecikmeli uydu-yer iletişim modülleri entegre etmek</li>
+        <li>Yüksek hızlı yörünge ortamında (~7.8 km/s) veri akışını optimize etmek</li>
+        <li>Otonom insansız hava aracı (C2) komuta sistemleriyle entegrasyon</li>
+    </ol>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Parametre</th>
+            <th>LEO Uyduları</th>
+            <th>GEO Uyduları</th>
+        </tr>
+        <tr>
+            <td><b>Yükseklik</b></td>
+            <td>200 – 2000 km</td>
+            <td>35.786 km</td>
+        </tr>
+        <tr>
+            <td><b>Gecikme</b></td>
+            <td>20 – 40 ms</td>
+            <td>~600 ms</td>
+        </tr>
+        <tr>
+            <td><b>Kapsama</b></td>
+            <td>Küresel (ağ ile)</td>
+            <td>Sabit bölge</td>
+        </tr>
+        <tr>
+            <td><b>Örnek</b></td>
+            <td>Starlink, OneWeb</td>
+            <td>Türksat 5A</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- SİBER GÜVENLİK -->
+    <a name="siber"></a>
+    <h2>&gt; Siber Güvenlik</h2>
+
+    <div class="kart-kutu">
+        <p>
+            Siber güvenlik; HFT sistemlerini ve uydu altyapılarını korumak için temel bir
+            disiplindir. KUSAK LTD'nin savunma araştırmaları, dayanıklı ve gerçek zamanlı
+            çalışan güvenli komuta-kontrol (C2) sistemlerini kapsamaktadır.
+        </p>
+    </div>
+
+    <h3>Güvenlik Alanlarım:</h3>
+    <ul type="disc">
+        <li>
+            <b>Ağ Güvenliği</b>
+            <ul type="circle">
+                <li>OSI Modeli tabanlı savunma katmanları</li>
+                <li>TCP/IP güvenlik protokolleri</li>
+                <li>Gelişmiş ağ topolojileri &amp; segmentasyon</li>
+            </ul>
+        </li>
+        <li>
+            <b>Sistem Güvenliği</b>
+            <ul type="circle">
+                <li>Linux Server güvenlik yönetimi</li>
+                <li>AWS EC2 güvenlik optimizasyonu</li>
+                <li>Güvenli çok iş parçacıklı programlama</li>
+            </ul>
+        </li>
+        <li>
+            <b>Savunma &amp; Otonom Sistemler</b>
+            <ul type="circle">
+                <li>Otonom insansız hava aracı iletişim protokolleri</li>
+                <li>Güvenli, düşük gecikmeli C2 altyapıları</li>
+                <li>Dayanıklı, gerçek zamanlı çalışma ortamları</li>
+            </ul>
+        </li>
+    </ul>
+
+    <hr>
+
+    <!-- IFRAME — Kaynak Video -->
+    <a name="video"></a>
+    <h2>&gt; Kaynak: HFT &amp; Düşük Gecikme Sistemleri</h2>
+
+    <div class="terminal">
+        &gt; Aşağıda HFT ve düşük gecikme sistemleri hakkında bir kaynak video bulunmaktadır.<br>
+        &gt; YouTube Video ID'sini güncellemek için: src="https://www.youtube.com/embed/VIDEO_ID"
+    </div>
+
+    <!--
+        IFRAME kullanımı (derste işlendi):
+        src, name, width, height, frameborder, scrolling, marginwidth, marginheight
+    -->
+    <div class="iframe-sarici">
+        <iframe
+            src="https://www.youtube.com/embed/9EMBKe1XMJA"
+            name="hft_video"
+            width="840"
+            height="480"
+            frameborder="0"
+            scrolling="no"
+            marginwidth="0"
+            marginheight="0">
+        </iframe>
+    </div>
+    <p style="color:#8b949e; font-size:12px;">
+        Video konusu: Yüksek Frekanslı Ticaret — Nanosaniyenin Değeri<br>
+        Video yüklenemiyorsa YouTube'da "HFT low latency systems" araması yapınız.
+    </p>
+
+    <hr>
+
+    <!-- VİZYON -->
+    <h2>&gt; Van 2035-2040 — Büyük Vizyon</h2>
+
+    <div class="kart-kutu">
+        <p>
+            <b>Hedef:</b> Algoritmik finans, siber savunma ve havacılık mühendisliğini
+            bir arada barındıran kapsamlı bir <b>İleri Teknoloji &amp; Uzay Komuta Üssü</b>
+            kurmak.<br><br>
+            Çoğunun imkânsız saydığı sistemler inşa etmeye kararlıyım.
+            Fiziksel olarak mümkün olanın sınırlarını zorlamak — bu tek hedef.
+        </p>
+    </div>
+
+    <p>
+        <a href="#hft">^ Sayfanın Başına Dön</a>
+    </p>
+
+</div>
+
+<footer>
+    <p>
+        &copy; 2026 <a href="mailto:kusakyunus54@gmail.com">Yunus Kuşak</a>
+        &nbsp;|&nbsp; KUSAK LTD &nbsp;|&nbsp; Tüm Hakları Saklıdır.
+    </p>
+</footer>
+
+</body>
+</html>
