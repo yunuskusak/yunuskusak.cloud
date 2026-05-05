@@ -1,108 +1,116 @@
 /* ==============================
    KİŞİSEL WEB SİTESİ - style.css
-   Siber Güvenlik / Yazılım Teması
+   Temiz & Profesyonel Tema
    ============================== */
 
 /* --- Genel Sayfa Ayarları --- */
 body {
-    background-color: #0d1117;
-    color: #c9d1d9;
-    font-family: "Courier New", Courier, monospace;
+    background-color: #f4f6f9;        /* açık gri arka plan */
+    color: #2c3e50;                  /* koyu lacivert metin */
+    font-family: "Segoe UI", Arial, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 /* --- Üst Başlık Alanı --- */
 .site-header {
-    background-color: #161b22;
-    border-bottom: 2px solid #00ff88;
-    padding: 18px 40px;
+    background-color: #ffffff;
+    border-bottom: 3px solid #2980b9;  /* mavi çizgi */
+    padding: 30px 20px;
     text-align: center;
 }
 
 .site-header h1 {
-    color: #00ff88;
-    font-size: 28px;
-    margin: 0 0 4px 0;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+    color: #2c3e50;
+    font-size: 32px;
+    margin: 0 0 6px 0;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .site-header p {
-    color: #8b949e;
+    color: #7f8c8d;
     margin: 0;
-    font-size: 13px;
-    letter-spacing: 1px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
 }
 
 /* --- Navigasyon Menüsü --- */
 nav {
-    background-color: #0d1117;
-    border-bottom: 1px solid #30363d;
+    background-color: #2980b9;        /* mavi arka plan */
     padding: 0;
     text-align: center;
+    border-bottom: 2px solid #1c5980;
 }
 
 nav a {
     display: inline-block;
-    color: #58a6ff;
+    color: #ffffff;
     text-decoration: none;
-    padding: 12px 22px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    border-right: 1px solid #21262d;
-    transition: background-color 0.2s, color 0.2s;
+    padding: 14px 24px;
+    font-size: 15px;
+    font-weight: bold;
+    border-right: 1px solid #3498db;
+    transition: background-color 0.2s;
 }
 
 nav a:first-child {
-    border-left: 1px solid #21262d;
+    border-left: 1px solid #3498db;
 }
 
 nav a:hover {
-    background-color: #161b22;
-    color: #00ff88;
+    background-color: #1c5980;
+    color: #ecf0f1;
 }
 
 /* --- İçerik Alanı --- */
 .container {
     max-width: 960px;
     margin: 40px auto;
-    padding: 0 30px;
+    padding: 30px 40px;
+    background-color: #ffffff;
+    border: 1px solid #dce1e8;
+    border-radius: 4px;
 }
 
 /* --- Sayfa Başlıkları --- */
 h2 {
-    color: #00ff88;
-    border-bottom: 1px solid #21262d;
+    color: #2980b9;
+    border-bottom: 2px solid #ecf0f1;
     padding-bottom: 10px;
-    letter-spacing: 2px;
+    margin-top: 10px;
+    font-size: 22px;
 }
 
 h3 {
-    color: #58a6ff;
-    letter-spacing: 1px;
+    color: #2c3e50;
+    font-size: 18px;
+    margin-top: 25px;
 }
 
 /* --- Yatay Çizgi --- */
 hr {
     border: none;
-    border-top: 1px solid #21262d;
+    border-top: 1px solid #ecf0f1;
     margin: 30px 0;
 }
 
 /* --- Bağlantılar --- */
 a {
-    color: #58a6ff;
+    color: #2980b9;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #00ff88;
+    color: #e74c3c;
+    text-decoration: underline;
 }
 
 /* --- Liste Stilleri --- */
 ul, ol {
-    line-height: 2;
-    color: #c9d1d9;
+    line-height: 1.8;
+    color: #2c3e50;
+    padding-left: 20px;
 }
 
 /* --- Tablo Stilleri --- */
@@ -110,61 +118,68 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin: 20px 0;
-    background-color: #161b22;
+    background-color: #ffffff;
+    border: 1px solid #dce1e8;
 }
 
 table th {
-    background-color: #21262d;
-    color: #00ff88;
-    padding: 12px 16px;
+    background-color: #2980b9;
+    color: #ffffff;
+    padding: 12px 15px;
     text-align: left;
-    letter-spacing: 1px;
-    font-size: 13px;
-    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #1c5980;
 }
 
 table td {
-    padding: 10px 16px;
-    border-bottom: 1px solid #21262d;
-    color: #c9d1d9;
+    padding: 10px 15px;
+    border: 1px solid #dce1e8;
+    color: #2c3e50;
     font-size: 14px;
+    background-color: #ffffff;
+}
+
+table tr:nth-child(even) td {
+    background-color: #f8f9fa;
 }
 
 table tr:hover td {
-    background-color: #1c2128;
+    background-color: #eaf2f8;
 }
 
 /* --- Form Stilleri --- */
 .form-satir {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 }
 
 .form-satir label {
     display: block;
-    color: #58a6ff;
+    color: #2c3e50;
+    font-weight: bold;
     margin-bottom: 6px;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .form-satir input[type="text"],
 .form-satir input[type="password"],
 .form-satir input[type="email"],
 .form-satir textarea {
-    width: 96%;
-    background-color: #161b22;
-    border: 1px solid #30363d;
-    color: #c9d1d9;
-    padding: 10px 14px;
-    font-family: "Courier New", Courier, monospace;
+    width: 95%;
+    background-color: #ffffff;
+    border: 1px solid #bdc3c7;
+    color: #2c3e50;
+    padding: 10px 12px;
+    font-family: Arial, sans-serif;
     font-size: 14px;
+    border-radius: 3px;
 }
 
 .form-satir input[type="text"]:focus,
 .form-satir textarea:focus {
-    border-color: #00ff88;
+    border-color: #2980b9;
     outline: none;
+    background-color: #f0f7fb;
 }
 
 .form-satir textarea {
@@ -174,111 +189,123 @@ table tr:hover td {
 /* --- Butonlar --- */
 input[type="submit"],
 input[type="reset"] {
-    background-color: #00ff88;
-    color: #0d1117;
+    background-color: #2980b9;
+    color: #ffffff;
     border: none;
     padding: 10px 28px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     margin-right: 10px;
-    text-transform: uppercase;
+    border-radius: 3px;
 }
 
 input[type="reset"] {
-    background-color: #21262d;
-    color: #c9d1d9;
+    background-color: #95a5a6;
+    color: #ffffff;
 }
 
 input[type="submit"]:hover {
-    background-color: #00cc6a;
+    background-color: #1c5980;
 }
 
 /* --- Checkbox ve Radio --- */
 .form-satir input[type="checkbox"],
 .form-satir input[type="radio"] {
     margin-right: 8px;
-    accent-color: #00ff88;
 }
 
 .form-satir .secenekler {
-    line-height: 2.2;
+    line-height: 2.0;
 }
 
 /* --- Bilgi Kartları (index) --- */
 .kart-kutu {
-    background-color: #161b22;
-    border: 1px solid #30363d;
-    border-left: 4px solid #00ff88;
+    background-color: #f0f7fb;
+    border: 1px solid #d4e6f1;
+    border-left: 5px solid #2980b9;
     padding: 20px 24px;
     margin: 20px 0;
+    border-radius: 3px;
 }
 
 .kart-kutu p {
     margin: 0;
     line-height: 1.8;
+    color: #2c3e50;
 }
 
 /* --- Resim Alanı --- */
 .resim-alan {
-    background-color: #161b22;
-    border: 1px solid #30363d;
+    background-color: #ffffff;
+    border: 1px solid #dce1e8;
     display: inline-block;
     padding: 10px;
     margin: 10px;
     text-align: center;
     vertical-align: top;
     width: 260px;
+    border-radius: 4px;
 }
 
 .resim-alan p {
-    color: #8b949e;
-    font-size: 12px;
+    color: #7f8c8d;
+    font-size: 13px;
     margin: 8px 0 0 0;
+    font-weight: bold;
 }
 
 .resim-alan img {
     width: 260px;
     height: 180px;
     object-fit: cover;
-    background-color: #21262d;
+    background-color: #ecf0f1;
     display: block;
+    border: 1px solid #bdc3c7;
 }
 
 /* --- iframe Sarmalayıcı --- */
 .iframe-sarici {
-    border: 2px solid #30363d;
+    border: 1px solid #bdc3c7;
     margin: 20px 0;
-    background-color: #161b22;
+    background-color: #ffffff;
     padding: 6px;
+    border-radius: 3px;
 }
 
-/* --- Terminal Efekti Metin --- */
+/* --- Terminal Efekti Metin (daha soft) --- */
 .terminal {
-    background-color: #161b22;
-    border: 1px solid #30363d;
-    border-left: 4px solid #58a6ff;
+    background-color: #f8f9fa;
+    border: 1px solid #dce1e8;
+    border-left: 5px solid #2980b9;
     padding: 16px 20px;
     margin: 20px 0;
+    font-family: "Courier New", monospace;
     font-size: 13px;
     line-height: 1.8;
-    color: #00ff88;
+    color: #2c3e50;
+    border-radius: 3px;
 }
 
 /* --- Alt Bilgi --- */
 footer {
-    background-color: #161b22;
-    border-top: 1px solid #21262d;
+    background-color: #ffffff;
+    border-top: 2px solid #dce1e8;
     text-align: center;
     padding: 20px;
-    color: #8b949e;
-    font-size: 12px;
-    margin-top: 60px;
-    letter-spacing: 1px;
+    color: #7f8c8d;
+    font-size: 13px;
+    margin-top: 40px;
+    letter-spacing: 0.5px;
 }
 
 footer a {
-    color: #58a6ff;
+    color: #2980b9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e74c3c;
 }
