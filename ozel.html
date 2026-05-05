@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Yunus Kuşak | HFT &amp; Siber Güvenlik &amp; Uzay</title>
+    <title>Yunus Kuşak | Proje Değerlendirme ve Durum Raporu</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="site-header">
-    <h1>HFT · SİBER GÜVENLİK · UZAY</h1>
-    <p>// KUSAK LTD — İlgi Alanlarım &amp; Projelerim //</p>
+    <h1>PROJE DEĞERLENDİRME VE DURUM RAPORU</h1>
+    <p>// Yürütücü: Yunus Kuşak — KUSAK LTD //</p>
 </div>
 
 <nav>
@@ -17,253 +17,243 @@
     <a href="hakkimda.html">[ Hakkımda ]</a>
     <a href="resimler.html">[ Resimler ]</a>
     <a href="iletisim.html">[ İletişim ]</a>
-    <a href="ozel.html">[ Siber Güvenlik ]</a>
+    <a href="ozel.html">[ Proje Raporu ]</a>
 </nav>
 
 <div class="container">
 
-    <!-- İÇİNDEKİLER (sayfa içi bağlantı) -->
-    <h2>&gt; İçindekiler</h2>
-    <div class="terminal">
-        &gt; <a href="#hft">Yüksek Frekanslı Ticaret (HFT)</a><br>
-        &gt; <a href="#mimari">KUSAK V13 Mimari Tablosu</a><br>
-        &gt; <a href="#leo">LEO Uydu Sistemleri — NETA</a><br>
-        &gt; <a href="#siber">Siber Güvenlik</a><br>
-        &gt; <a href="#video">Kaynak Video</a>
-    </div>
-
-    <hr>
-
-    <!-- HFT -->
-    <a name="hft"></a>
-    <h2>&gt; Yüksek Frekanslı Ticaret (HFT)</h2>
+    <!-- GİRİŞ -->
+    <h2>&gt; Amaç</h2>
 
     <div class="kart-kutu">
         <p>
-            Yüksek Frekanslı Ticaret (HFT); karmaşık algoritmalar ve son derece hızlı bilgisayar
-            sistemleri kullanarak piyasada saniyenin milyonda biri düzeyinde işlemler gerçekleştiren
-            bir stratejidir. Bir nanosaniyede (10^-9 saniye) binlerce emir gönderilebilir.<br><br>
-            Bu alanda kritik olan şey yalnızca algoritmanın zekası değil —
-            <b>donanıma ne kadar yakın çalışabildiğinizdir.</b>
+            Bu sayfa; tarafımca yürütülen, askıya alınan veya feshedilen
+            <b>stratejik projelerin</b> güncel durumunu ve teknik değerlendirmelerini
+            paylaşmak amacıyla hazırlanmıştır.<br>
+            Her proje, kendi içerisinde bağımsız bir Ar-Ge veya operasyonel birim olarak
+            değerlendirilmektedir.
         </p>
     </div>
 
-    <h3>HFT'de Temel Kavramlar:</h3>
-    <ul type="disc">
-        <li>
-            <b>Düşük Gecikme (Low-Latency)</b>
-            <ul type="circle">
-                <li>Kernel bypass teknikleri (DPDK, RDMA)</li>
-                <li>CPU önbellek optimizasyonu (Cache Locality)</li>
-                <li>TSC donanım zamanlama (CPU cycle sayacı)</li>
-            </ul>
-        </li>
-        <li>
-            <b>Kilit-serbest Yapılar (Lock-free)</b>
-            <ul type="circle">
-                <li>SPSC Ring Buffer (Single Producer Single Consumer)</li>
-                <li>Zero-Heap: dinamik bellek tahsisi yok</li>
-                <li>Zero-Lock: mutex ve semafor yok</li>
-            </ul>
-        </li>
-        <li>
-            <b>Deterministik Yürütme</b>
-            <ul type="circle">
-                <li>Her adım öngörülebilir sürede tamamlanır</li>
-                <li>Garbage Collector yok, tam kontrol</li>
-                <li>Ghost-cancel-safe execution</li>
-            </ul>
-        </li>
-    </ul>
-
     <hr>
 
-    <!-- MİMARİ TABLOSU -->
-    <a name="mimari"></a>
-    <h2>&gt; KUSAK V13 — Mimari Tablosu</h2>
+    <!-- PROJE DURUM ÖZET TABLOSU -->
+    <h2>&gt; Proje Durum Özeti</h2>
 
-    <table border="1" cellpadding="12" cellspacing="0">
+    <table class="bilgi-tablosu" cellpadding="10" cellspacing="0">
         <tr>
-            <th colspan="3" align="center">KUSAK V13 — TİER-1 HFT MOTORU MİMARİSİ</th>
+            <th>Proje Adı</th>
+            <th>Alan</th>
+            <th>Durum</th>
+            <th>Açıklama</th>
         </tr>
         <tr>
-            <th>Bileşen</th>
-            <th>Teknoloji</th>
-            <th>Amaç</th>
+            <td><b>YYY</b></td>
+            <td>OSINT / İstihbarat</td>
+            <td><b>Aktif</b></td>
+            <td>Açık kaynak istihbaratı, veri madenciliği ve bilgi toplama süreçleri.</td>
         </tr>
         <tr>
-            <td><b>Dil</b></td>
-            <td>Modern C++20</td>
-            <td>Donanım düzeyinde kontrol, sıfır overhead</td>
+            <td><b>YYY-Borsa</b></td>
+            <td>Finans & Danışmanlık</td>
+            <td><b>Aktif</b></td>
+            <td>100+ kişiye borsa danışmanlığı; piyasa analizi ve strateji geliştirme.</td>
         </tr>
         <tr>
-            <td><b>Veri Yapısı</b></td>
-            <td>SPSC Ring Buffer</td>
-            <td>Kilit-serbest, önbellek dostu kuyruk</td>
+            <td><b>Project KUSAK</b></td>
+            <td>Yüksek Frekanslı Ticaret (HFT)</td>
+            <td><b>Aktif</b></td>
+            <td>Yeni nesil HFT mimarisi; nanosaniye seviyesinde emir defteri analizi.</td>
         </tr>
         <tr>
-            <td><b>Bellek</b></td>
-            <td>Zero-Heap Allocation</td>
-            <td>Deterministik, GC yok</td>
+            <td><b>Neta LEO</b></td>
+            <td>Uzay / Ağ Teknolojileri</td>
+            <td><b>Aktif</b></td>
+            <td>LEO uydu takımyıldızları için dinamik yönlendirme motoru (Kuşak & Gündüz).</td>
         </tr>
         <tr>
-            <td><b>Zamanlama</b></td>
-            <td>TSC (Time Stamp Counter)</td>
-            <td>Nanosaniye hassasiyeti</td>
+            <td><b>KUSAK V13</b></td>
+            <td>Yüksek Frekanslı Ticaret</td>
+            <td><b>Aktif</b></td>
+            <td>C++20 ile geliştirilen Tier-1 HFT yürütme motoru.</td>
         </tr>
         <tr>
-            <td><b>Yürütme</b></td>
-            <td>Ghost-Cancel-Safe</td>
-            <td>Yüksek oynaklık ortamında bütünlük</td>
+            <td><b>Felsefe & Psikoloji Kitabı</b></td>
+            <td>Akademik / Yayın</td>
+            <td><b>Aktif</b></td>
+            <td>Şahsi entelektüel üretim, yazım süreci devam ediyor.</td>
         </tr>
         <tr>
-            <td><b>Altyapı</b></td>
-            <td>Linux / AWS EC2 optimizasyonu</td>
-            <td>Co-location &amp; düşük gecikmeli bağlantı</td>
+            <td><b>Auranoov</b></td>
+            <td>Donanım / Ses Teknolojileri</td>
+            <td><b>Feshedildi</b></td>
+            <td>Kulaklık markası; sürdürülebilir tedarik zinciri kurulamadı.</td>
+        </tr>
+        <tr>
+            <td><b>Nexus</b></td>
+            <td>Kuantum Sistemleri</td>
+            <td><b>Askıya alındı</b></td>
+            <td>Kuantum işlem gücü altyapısı ve Ar-Ge bütçesi yetersizliği.</td>
+        </tr>
+        <tr>
+            <td><b>GenGPT</b></td>
+            <td>Genetik + Yapay Zeka</td>
+            <td><b>Askıya alındı</b></td>
+            <td>Klinik veri seti erişim kısıtı ve biyoinformatik altyapı eksikliği.</td>
         </tr>
     </table>
 
     <hr>
 
-    <!-- LEO UYDU -->
-    <a name="leo"></a>
-    <h2>&gt; LEO Uydu Sistemleri — NETA Projesi</h2>
+    <!-- DETAYLI RAPOR: PROJECT KUSAK -->
+    <h2>&gt; Detaylı Teknik Rapor: Project KUSAK</h2>
 
     <div class="kart-kutu">
         <p>
-            <b>NETA LEO</b>; HFT'de kanıtlanmış ultra-düşük gecikme prensiplerini uzay sektörüne
-            taşıyan bir araştırma-geliştirme projesidir. Alçak Yörüngeli (LEO) uydu ağları için
-            dinamik, yüksek performanslı yönlendirme (routing) motoru tasarlanmaktadır.
+            <b>Proje Adı:</b> Project KUSAK — Yeni Nesil HFT Mimarisi<br>
+            <b>Slogan:</b> "Geleceği Tahmin Etmiyoruz. 'Şimdi'yi İşliyoruz."<br>
+            <b>Geliştirici:</b> Kusak Ltd. (Londra, Birleşik Krallık)<br>
+            <b>Durum:</b> Aktif Geliştirme
         </p>
     </div>
 
-    <h3>Proje Hedefleri:</h3>
-    <ol type="1">
-        <li>Mobil terminaller için otonom yönlendirme protokolleri geliştirmek</li>
-        <li>HFT kalitesinde düşük gecikmeli uydu-yer iletişim modülleri entegre etmek</li>
-        <li>Yüksek hızlı yörünge ortamında (~7.8 km/s) veri akışını optimize etmek</li>
-        <li>Otonom insansız hava aracı (C2) komuta sistemleriyle entegrasyon</li>
-    </ol>
+    <h3>1. Proje Tanımı</h3>
+    <p>
+        Piyasadaki algoritmik ticaret sistemlerinin büyük çoğunluğu, geçmiş fiyat hareketlerine
+        dayalı gecikmeli indikatörler (RSI, MACD) üzerine kuruludur. Project KUSAK ise geçmişi
+        analiz etmez; doğrudan piyasanın kalbine, emir defterinin mikro-dinamiklerine odaklanır.
+        Sistem, anlık likidite anormalliklerini ve kurumsal "balina" hareketlerini nanosaniye
+        hızında tespit edip, fiyat henüz tepki vermeden işleme girmek üzere tasarlanmış saf bir
+        HFT motorudur.
+    </p>
+
+    <h3>2. Kilitlenmesiz (Lock-Free) C++ Altyapısı</h3>
+    <div class="kart-kutu">
+        <p>
+            KUSAK, bir Python scripti veya standart bir Node.js botu değildir. Doğrudan donanım
+            seviyesinde çalışan, aracı kütüphaneleri (API wrapper) aradan çıkaran bir mühendislik
+            ürünüdür.
+        </p>
+        <ul>
+            <li><b>Lock-Free SPSC Mimarisi:</b> Sistemin kalbinde, veriyi çeken "Producer" ile
+            veriyi işleyip emir gönderen "Consumer" mekanizmalarının birbirini beklemediği,
+            kilitlenmesiz Tek Üretici - Tek Tüketici mimarisi yatar. Bu asenkron yapı, veri
+            darboğazlarını sıfıra indirir.</li>
+            <li><b>Doğrudan WebSocket / SSL Tünelleme:</b> Sistem, Binance ana sunucularına
+            doğrudan bağlanır. Gelen <i>depthUpdate</i> (emir defteri değişimi) paketleri,
+            milisaniyelik gecikmelere bile mahal vermeden doğrudan RAM üzerinde işlenir.</li>
+        </ul>
+    </div>
+
+    <h3>3. Taktiksel Radarlar: OBI ve VPIN</h3>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Model</th>
+            <th>Açıklama</th>
+        </tr>
+        <tr>
+            <td><b>OBI (Order Book Imbalance)</b></td>
+            <td>Anlık olarak alıcı ve satıcı kademelerindeki ağırlığı tartar. Belirlenen asimetrik
+            eşik değerleri aşıldığında, sistem tahtadaki kırılımı milisaniyeler önceden tespit
+            ederek pozisyon alır.</td>
+        </tr>
+        <tr>
+            <td><b>VPIN (Volume-Synchronized Probability of Informed Trading)</b></td>
+            <td>Sadece işlem hacmine bakmaz. Sıradan piyasa katılımcılarının yarattığı "gürültü"
+            ile, içeriden bilgi alan kurumsal yatırımcıların agresif hareketlerini birbirinden
+            ayırır. Bu sayede sahte kırılımlardan (fakeout) korunur.</td>
+        </tr>
+    </table>
+
+    <h3>4. LEO Uydu Mirası ve Bağlantı Dayanıklılığı</h3>
+    <div class="kart-kutu">
+        <p>
+            Sıradan ticaret botlarını KUSAK mimarisinden ayıran en kritik faktör, kökenleridir.
+            Sistemin bağlantı ve yönlendirme altyapısı, Alçak Dünya Yörüngesi (LEO) uyduları
+            arasındaki iletişimde yaşanan "Sürekli Topoloji Çöküşü" sorununu çözmek için
+            geliştirilen Ar-Ge çalışmalarına dayanır.<br><br>
+            Standart botlar sunucu bağlantısında yaşanan anlık bir paket kaybında çökerken veya
+            donarken; KUSAK, tıpkı uzaydaki uydular arası kopmalara dayanacak şekilde yazıldığı
+            için, agresif "Reconnect" döngüleriyle saniyesinde farklı bir sunucu portuna tutunur
+            ve nanosaniyelik veri akışını kesintisiz sürdürür.
+        </p>
+    </div>
+
+    <p style="text-align:center;"><b>Kusak Ltd. | Saf Mühendislik. Sıfır Gecikme.</b></p>
+
+    <hr>
+
+    <!-- DETAYLI RAPOR: NETA LEO -->
+    <h2>&gt; Detaylı Teknik Rapor: Neta LEO</h2>
+
+    <div class="kart-kutu">
+        <p>
+            <b>Proje Adı:</b> Neta LEO<br>
+            <b>Mevcut Durum:</b> Aktif Geliştirme Aşamasında (Ar-Ge ve Sistem Mimarisi Fazı)<br>
+            <b>Proje Yürütücüleri:</b> Yunus Kuşak &amp; Samet Gündüz
+            (Referans: <a href="https://sametgunduz.site" target="_blank">sametgunduz.site</a>)
+        </p>
+    </div>
+
+    <h3>1. Proje Tanımı ve Operasyonel Kapsam</h3>
+    <p>
+        Neta LEO, Alçak Dünya Yörüngesi (LEO) uydu takımyıldızları için tasarlanmakta olan,
+        yüksek hızda hareket eden düğümler arası veri iletimini ve ağ topolojisini optimize
+        etmeyi amaçlayan bir haberleşme/yönlendirme (routing) altyapısı projesidir. Sistem,
+        uyduların sürekli değişen yörünge konumları nedeniyle ortaya çıkan "sürekli topoloji
+        çöküşü" ve yüksek gecikme sorunlarına asenkron ve kesintisiz çözümler üretmek üzere
+        kurgulanmaktadır.
+    </p>
+
+    <h3>2. Geliştirici Dinamiği ve Görev Dağılımı</h3>
+    <div class="kart-kutu">
+        <p>
+            <b>Yunus Kuşak:</b> Sistemin düşük seviyeli yazılım mimarisi, yüksek frekanslı veri
+            işleme (HFT mantığıyla) ve C++ tabanlı kilitlenmesiz (lock-free) yönlendirme
+            motorlarının inşası.<br><br>
+            <b>Samet Gündüz:</b> Ağ topolojisi, düğümler arası el sıkışma (handover)
+            protokolleri ve altyapı teorisinin tasarlanması.
+        </p>
+    </div>
+
+    <h3>3. Teknik Değerlendirme (Hakem Raporu)</h3>
 
     <table border="1" cellpadding="10" cellspacing="0">
         <tr>
-            <th>Parametre</th>
-            <th>LEO Uyduları</th>
-            <th>GEO Uyduları</th>
+            <th>Kriter</th>
+            <th>Değerlendirme</th>
         </tr>
         <tr>
-            <td><b>Yükseklik</b></td>
-            <td>200 – 2000 km</td>
-            <td>35.786 km</td>
+            <td><b>İnovasyon Değeri</b></td>
+            <td>LEO uyduları arası iletişim (ISL), telekom ve savunma sanayisinin en agresif
+            büyüme alanlarından biridir. Otonom yönlendirme mimarisi teknik olarak geçerli ve
+            piyasa karşılığı olan bir Ar-Ge konusudur.</td>
         </tr>
         <tr>
-            <td><b>Gecikme</b></td>
-            <td>20 – 40 ms</td>
-            <td>~600 ms</td>
+            <td><b>Zorluk Derecesi (Risk Analizi)</b></td>
+            <td>En büyük mühendislik bariyeri; simülasyon ortamından çıkıp gerçek RF/optik
+            donanımla entegrasyondur. Doppler kayması ve atmosferik zayıflamaların koda
+            entegrasyonu ciddi kalibrasyon gerektirir.</td>
         </tr>
         <tr>
-            <td><b>Kapsama</b></td>
-            <td>Küresel (ağ ile)</td>
-            <td>Sabit bölge</td>
+            <td><b>Rasyonel Beklenti</b></td>
+            <td>Geliştirilmekte olan sistemin, ticari donanım üretimi öncesinde sağlam bir
+            "Kavram Kanıtı" (Proof of Concept) yazılım simülatörü olarak tamamlanması, ilk
+            majör kilometre taşıdır.</td>
         </tr>
         <tr>
-            <td><b>Örnek</b></td>
-            <td>Starlink, OneWeb</td>
-            <td>Türksat 5A</td>
+            <td colspan="2" align="center">
+                <b>Sonuç:</b> Neta LEO; ağır mühendislik mesaisi gerektiren, doğru görev
+                dağılımıyla yürütülen ve telekomünikasyon teknolojilerinin uç noktasını
+                hedefleyen aktif ve gerçekçi bir sistem projesidir.
+            </td>
         </tr>
     </table>
 
     <hr>
 
-    <!-- SİBER GÜVENLİK -->
-    <a name="siber"></a>
-    <h2>&gt; Siber Güvenlik</h2>
-
-    <div class="kart-kutu">
-        <p>
-            Siber güvenlik; HFT sistemlerini ve uydu altyapılarını korumak için temel bir
-            disiplindir. KUSAK LTD'nin savunma araştırmaları, dayanıklı ve gerçek zamanlı
-            çalışan güvenli komuta-kontrol (C2) sistemlerini kapsamaktadır.
-        </p>
-    </div>
-
-    <h3>Güvenlik Alanlarım:</h3>
-    <ul type="disc">
-        <li>
-            <b>Ağ Güvenliği</b>
-            <ul type="circle">
-                <li>OSI Modeli tabanlı savunma katmanları</li>
-                <li>TCP/IP güvenlik protokolleri</li>
-                <li>Gelişmiş ağ topolojileri &amp; segmentasyon</li>
-            </ul>
-        </li>
-        <li>
-            <b>Sistem Güvenliği</b>
-            <ul type="circle">
-                <li>Linux Server güvenlik yönetimi</li>
-                <li>AWS EC2 güvenlik optimizasyonu</li>
-                <li>Güvenli çok iş parçacıklı programlama</li>
-            </ul>
-        </li>
-        <li>
-            <b>Savunma &amp; Otonom Sistemler</b>
-            <ul type="circle">
-                <li>Otonom insansız hava aracı iletişim protokolleri</li>
-                <li>Güvenli, düşük gecikmeli C2 altyapıları</li>
-                <li>Dayanıklı, gerçek zamanlı çalışma ortamları</li>
-            </ul>
-        </li>
-    </ul>
-
-    <hr>
-
-    <!-- IFRAME — Kaynak Video -->
-    <a name="video"></a>
-    <h2>&gt; Kaynak: HFT &amp; Düşük Gecikme Sistemleri</h2>
-
-    <div class="terminal">
-        &gt; Aşağıda HFT ve düşük gecikme sistemleri hakkında bir kaynak video bulunmaktadır.<br>
-        &gt; YouTube Video ID'sini güncellemek için: src="https://www.youtube.com/embed/VIDEO_ID"
-    </div>
-
-    <!--
-        IFRAME kullanımı (derste işlendi):
-        src, name, width, height, frameborder, scrolling, marginwidth, marginheight
-    -->
-    <div class="iframe-sarici">
-        <iframe
-            src="https://www.youtube.com/embed/9EMBKe1XMJA"
-            name="hft_video"
-            width="840"
-            height="480"
-            frameborder="0"
-            scrolling="no"
-            marginwidth="0"
-            marginheight="0">
-        </iframe>
-    </div>
-    <p style="color:#8b949e; font-size:12px;">
-        Video konusu: Yüksek Frekanslı Ticaret — Nanosaniyenin Değeri<br>
-        Video yüklenemiyorsa YouTube'da "HFT low latency systems" araması yapınız.
-    </p>
-
-    <hr>
-
-    <!-- VİZYON -->
-    <h2>&gt; Van 2035-2040 — Büyük Vizyon</h2>
-
-    <div class="kart-kutu">
-        <p>
-            <b>Hedef:</b> Algoritmik finans, siber savunma ve havacılık mühendisliğini
-            bir arada barındıran kapsamlı bir <b>İleri Teknoloji &amp; Uzay Komuta Üssü</b>
-            kurmak.<br><br>
-            Çoğunun imkânsız saydığı sistemler inşa etmeye kararlıyım.
-            Fiziksel olarak mümkün olanın sınırlarını zorlamak — bu tek hedef.
-        </p>
-    </div>
-
-    <p>
-        <a href="#hft">^ Sayfanın Başına Dön</a>
+    <p style="text-align:center;">
+        <a href="index.html">[ Ana Sayfaya Dön ]</a>
     </p>
 
 </div>
