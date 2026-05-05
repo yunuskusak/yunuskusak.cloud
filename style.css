@@ -301,3 +301,40 @@ footer a {
 footer a:hover {
     color: #c0392b;
 }
+/* --- Hızlı Bilgiler Tablosu --- */
+.bilgi-tablosu {
+    width: 100%;
+    border: 1px solid #b0bec5;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.bilgi-tablosu td {
+    border: 1px solid #cfd8dc;
+    padding: 10px 14px;
+    vertical-align: top;
+}
+
+.bilgi-etiket {
+    background-color: #e8f0fe;
+    width: 160px;
+    color: #1a3c5e;
+    font-weight: bold;
+}
+
+.bilgi-deger {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* --- Gelişmeler Listesi --- */
+ul.gelismeler {
+    list-style-type: square;
+    color: #2c3e50;
+    line-height: 2;
+    padding-left: 25px;
+}
+
+ul.gelismeler li b {
+    color: #1a3c5e;
+}
