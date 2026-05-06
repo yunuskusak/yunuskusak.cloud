@@ -1,167 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Yunus Kuşak | Resimler</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* --- Resim Galerisi Alanı --- */
+.resim-alan {
+    background-color: #ffffff;
+    border: 1px solid #cfd8dc;
+    display: inline-block;
+    padding: 8px;
+    margin: 10px;
+    text-align: center;
+    vertical-align: top;
+    width: 260px;
+}
 
-<div class="site-header">
-    <h1>YUNUS KUŞAK</h1>
-    <p>// Low-Latency Systems Architect &amp; Founder @ KUSAK LTD //</p>
-</div>
+.resim-alan p {
+    color: #555555;
+    font-size: 13px;
+    margin: 8px 0 0 0;
+    font-weight: bold;
+}
 
-<nav>
-    <a href="index.html">[ Ana Sayfa ]</a>
-    <a href="hakkimda.html">[ Hakkımda ]</a>
-    <a href="resimler.html">[ Resimler ]</a>
-    <a href="iletisim.html">[ İletişim ]</a>
-    <a href="ozel.html">[ Siber Güvenlik ]</a>
-    <a href="kusak.html">[ Project KUSAK ]</a>
-</nav>
+.resim-alan img {
+    width: 260px;
+    height: 180px;
+    background-color: #eceff1;
+    display: block;
+    border: 1px solid #b0bec5;
+}
 
-<div class="container">
-
-    <h2>&gt; Resimler</h2>
-
-    <div class="terminal">
-        &gt; Kişisel fotoğraflarım ve projelerime ait görseller bu sayfada yer almaktadır.<br>
-        &gt; Resimlere tıklayarak büyük boyutunu görüntüleyebilirsiniz.<br>
-        &gt; Resim eklemek için dosyaları bu HTML ile aynı klasöre koyun ve src yollarını güncelleyin.
-    </div>
-
-    <hr>
-
-    <!-- PROFİL RESMİ -->
-    <h2>&gt; Profil Fotoğrafı</h2>
-
-    <div style="text-align: center; margin: 20px 0;">
-        <a href="profil_buyuk.jpg" target="_blank">
-            <img src="profil.jpg"
-                 alt="Yunus Kuşak - Profil Fotoğrafı"
-                 width="200"
-                 height="200"
-                 border="2"
-                 style="border-color:#00ff88; border-style:solid;">
-        </a>
-        <p style="color:#8b949e; margin-top:8px; font-size:13px;">
-            Yunus Kuşak — KUSAK LTD Founder<br>
-            [ Fotoğrafı buraya ekleyin: profil.jpg ]
-        </p>
-    </div>
-
-    <hr>
-
-    <!-- GALERİ -->
-    <h2>&gt; Proje &amp; Etkinlik Galerisi</h2>
-
-    <table border="0" cellpadding="15" cellspacing="10" align="center">
-        <tr>
-            <!-- KUSAK LTD -->
-            <td align="center">
-                <div class="resim-alan">
-                    <a href="kusak_ltd_buyuk.jpg" target="_blank">
-                        <img src="kusak_ltd.jpg"
-                             alt="KUSAK LTD - Ofis / Çalışma Ortamı"
-                             width="260"
-                             height="180">
-                    </a>
-                    <p>KUSAK LTD — Çalışma Ortamı</p>
-                </div>
-            </td>
-
-            <!-- KUSAK V13 -->
-            <td align="center">
-                <div class="resim-alan">
-                    <a href="v13_buyuk.jpg" target="_blank">
-                        <img src="v13.jpg"
-                             alt="KUSAK V13 - HFT Engine"
-                             width="260"
-                             height="180">
-                    </a>
-                    <p>KUSAK V13 — HFT Motoru Geliştirme</p>
-                </div>
-            </td>
-
-            <!-- NETA LEO -->
-            <td align="center">
-                <div class="resim-alan">
-                    <a href="neta_leo_buyuk.jpg" target="_blank">
-                        <img src="neta_leo.jpg"
-                             alt="NETA LEO - Satellite Network"
-                             width="260"
-                             height="180">
-                    </a>
-                    <p>NETA LEO — Uydu Routing Projesi</p>
-                </div>
-            </td>
-        </tr>
-
-        <tr>
-            <!-- Üniversite -->
-            <td align="center">
-                <div class="resim-alan">
-                    <a href="universite_buyuk.jpg" target="_blank">
-                        <img src="universite.jpg"
-                             alt="Erzincan Binali Yıldırım Üniversitesi"
-                             width="260"
-                             height="180">
-                    </a>
-                    <p>Erzincan Binali Yıldırım Üniversitesi</p>
-                </div>
-            </td>
-
-            <!-- Van -->
-            <td align="center">
-                <div class="resim-alan">
-                    <a href="van_buyuk.jpg" target="_blank">
-                        <img src="van.jpg"
-                             alt="Van, Türkiye"
-                             width="260"
-                             height="180">
-                    </a>
-                    <p>Van, Türkiye — Memleket</p>
-                </div>
-            </td>
-
-            <!-- HSD EBYÜ -->
-            <td align="center">
-                <div class="resim-alan">
-                    <a href="hsd_buyuk.jpg" target="_blank">
-                        <img src="hsd.jpg"
-                             alt="HSD EBYÜ Etkinlik"
-                             width="260"
-                             height="180">
-                    </a>
-                    <p>HSD EBYÜ — Etkinlik</p>
-                </div>
-            </td>
-        </tr>
-    </table>
-
-    <hr>
-    <h2>&gt; Nasıl Resim Eklerim?</h2>
-
-    <div class="kart-kutu">
-        <p>
-            1. Resimleri bu HTML dosyasıyla aynı klasöre koyun.<br>
-            2. Dosya adlarını (örn: <b>profil.jpg</b>, <b>kusak_ltd.jpg</b>) kendi resimlerinizle eşleştirin.<br>
-            3. <b>src</b> parametresini dosya adınıza göre güncelleyin.<br>
-            <br>
-            <u>Örnek:</u><br>
-            <b>&lt;img src="benim_resim.jpg" alt="Açıklama" width="260" height="180"&gt;</b>
-        </p>
-    </div>
-
-</div>
-
-<footer>
-    <p>
-        &copy; 2026 <a href="mailto:kusakyunus54@gmail.com">Yunus Kuşak</a>
-        &nbsp;|&nbsp; KUSAK LTD &nbsp;|&nbsp; Tüm Hakları Saklıdır.
-    </p>
-</footer>
-
-</body>
-</html>
+/* --- Profil Resmi --- */
+.profil-resim {
+    border: 3px solid #1a3c5e;
+    padding: 3px;
+    background-color: #ffffff;
+}
