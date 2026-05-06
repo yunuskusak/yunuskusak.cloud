@@ -1,150 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Yunus Kuşak | İletişim</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<div class="site-header">
-    <h1>YUNUS KUŞAK</h1>
-    <p>// Low-Latency Systems Architect &amp; Founder @ KUSAK LTD //</p>
-</div>
-
-<nav>
-    <a href="index.html">[ Ana Sayfa ]</a>
-    <a href="hakkimda.html">[ Hakkımda ]</a>
-    <a href="resimler.html">[ Resimler ]</a>
-    <a href="iletisim.html">[ İletişim ]</a>
-    <a href="kusak.html">[ Project KUSAK ]</a>
-    
-</nav>
-
-<div class="container">
-
-    <h2>&gt; İletişim</h2>
-
-    <div class="terminal">
-        &gt; Tier-1 kurum, vizyoner yatırımcı veya sisteminizin gecikme sınırlarını zorlamak<br>
-        &nbsp;&nbsp; isteyen bir organizasyonsanız bağlantı kuralım.<br>
-        &gt; Doğrudan e-posta:
-        <a href="mailto:kusakyunus54@gmail.com">kusakyunus54@gmail.com</a>
-    </div>
-
-    <hr>
-
-    <!-- İLETİŞİM FORMU -->
-    <h2>&gt; Mesaj Gönder</h2>
-
-    <form action="islem.php" method="post">
-
-        <div class="form-satir">
-            <label>Ad Soyad:</label>
-            <input type="text" name="ad_soyad" size="40" maxlength="100">
-        </div>
-
-        <div class="form-satir">
-            <label>E-posta Adresi:</label>
-            <input type="text" name="eposta" size="40" maxlength="150">
-        </div>
-
-        <div class="form-satir">
-            <label>Kurum / Şirket (Opsiyonel):</label>
-            <input type="text" name="kurum" size="40" maxlength="150">
-        </div>
-
-        <hr>
-
-        <!-- Mesaj Konusu - Radio -->
-        <div class="form-satir">
-            <label>Mesajın Konusu:</label>
-            <div class="secenekler">
-                <input type="radio" name="konu" value="hft"> HFT / Alçak Gecikme Sistemleri<br>
-                <input type="radio" name="konu" value="leo"> LEO Uydu Ağları (NETA)<br>
-                <input type="radio" name="konu" value="savunma"> Savunma &amp; Otonom Sistemler<br>
-                <input type="radio" name="konu" value="yatirim"> Yatırım / İş Birliği<br>
-                <input type="radio" name="konu" value="egitim"> Eğitim / Akademik<br>
-                <input type="radio" name="konu" value="diger"> Diğer
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- İlgi Alanları - Checkbox -->
-        <div class="form-satir">
-            <label>Ortak İlgi Alanlarımız:</label>
-            <div class="secenekler">
-                <input type="checkbox" name="ilgi1" value="cpp"> C++ / Low-Latency Programlama<br>
-                <input type="checkbox" name="ilgi2" value="hft"> Yüksek Frekanslı Ticaret (HFT)<br>
-                <input type="checkbox" name="ilgi3" value="uzay"> Uzay Teknolojileri &amp; LEO<br>
-                <input type="checkbox" name="ilgi4" value="siber"> Siber Güvenlik<br>
-                <input type="checkbox" name="ilgi5" value="ag"> Ağ Sistemleri &amp; Mimari<br>
-                <input type="checkbox" name="ilgi6" value="insansiz"> İnsansız Hava Araçları (C2)<br>
-                <input type="checkbox" name="ilgi7" value="diger"> Diğer
-            </div>
-        </div>
-
-        <hr>
-
-        <!-- Mesaj -->
-        <div class="form-satir">
-            <label>Mesajınız:</label>
-            <textarea name="mesaj" rows="8" cols="60">
-            </textarea>
-        </div>
-
-        <hr>
-
-        <div class="form-satir">
-            <input type="submit" value="&gt; Gönder">
-            <input type="reset" value="Temizle">
-        </div>
-
-    </form>
-
-    <hr>
-
-    <!-- DİREKT İLETİŞİM -->
-    <h2>&gt; Doğrudan İletişim Kanalları</h2>
-
-    <table border="1" cellpadding="12" cellspacing="0">
-        <tr>
-            <th>Platform</th>
-            <th>Adres / Bağlantı</th>
-        </tr>
-        <tr>
-            <td><b>E-posta</b></td>
-            <td>
-                <a href="mailto:kusakyunus54@gmail.com">kusakyunus54@gmail.com</a>
-            </td>
-        </tr>
-        <tr>
-            <td><b>LinkedIn</b></td>
-            <td>
-                <a href="https://www.linkedin.com/in/yunuskuşak-900761386" target="_blank">
-                    linkedin.com/in/yunuskuşak-900761386
-                </a>
-            </td>
-        </tr>
-        <tr>
-            <td><b>Şirket</b></td>
-            <td>KUSAK LTD — İngiltere, Birleşik Krallık</td>
-        </tr>
-        <tr>
-            <td><b>Konum</b></td>
-            <td>Van, Türkiye</td>
-        </tr>
-    </table>
-
-</div>
-
-<footer>
-    <p>
-        &copy; 2026 <a href="mailto:kusakyunus54@gmail.com">Yunus Kuşak</a>
-        &nbsp;|&nbsp; KUSAK LTD &nbsp;|&nbsp; Tüm Hakları Saklıdır.
-    </p>
-</footer>
-
-</body>
-</html>
+.form-satir {
+    margin-bottom: 18px;
+}
+.form-satir label {
+    display: block;
+    color: #1a3c5e;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.form-satir input[type="text"],
+.form-satir input[type="password"],
+.form-satir input[type="email"],
+.form-satir textarea {
+    width: 95%;
+    background-color: #ffffff;
+    border: 1px solid #90a4ae;
+    color: #333333;
+    padding: 8px 12px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+.form-satir textarea {
+    resize: vertical;
+}
+input[type="submit"],
+input[type="reset"] {
+    background-color: #1a3c5e;
+    color: #ffffff;
+    border: 1px solid #0f2a44;
+    padding: 10px 28px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+input[type="reset"] {
+    background-color: #78909c;
+    border: 1px solid #546e7a;
+}
