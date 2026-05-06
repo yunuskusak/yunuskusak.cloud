@@ -1,33 +1,155 @@
-/* --- Resim Galerisi Alanı --- */
-.resim-alan {
-    background-color: #ffffff;
-    border: 1px solid #cfd8dc;
-    display: inline-block;
-    padding: 8px;
-    margin: 10px;
-    text-align: center;
-    vertical-align: top;
-    width: 260px;
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yunus Kuşak | Resimler</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.resim-alan p {
-    color: #555555;
-    font-size: 13px;
-    margin: 8px 0 0 0;
-    font-weight: bold;
-}
+<div class="site-header">
+    <h1>YUNUS KUŞAK</h1>
+    <p>@KUSAK LTD &nbsp; @YYY</p>
+</div>
 
-.resim-alan img {
-    width: 260px;
-    height: 180px;
-    background-color: #eceff1;
-    display: block;
-    border: 1px solid #b0bec5;
-}
+<nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hakkimda.html">Hakkımda</a>
+    <a href="resimler.html">Resimler</a>
+    <a href="iletisim.html">İletişim</a>
+    <a href="girisimlerim.html">Girişimlerim</a>
+    <a href="kusakborsa.html">KUSAK BORSA</a>
+</nav>
 
-/* --- Profil Resmi --- */
-.profil-resim {
-    border: 3px solid #1a3c5e;
-    padding: 3px;
-    background-color: #ffffff;
-}
+<div class="container">
+
+    <h2>Resimler</h2>
+
+    <div class="kart-kutu">
+        <p>
+            Kişisel fotoğraflarım ve projelerime ait görseller bu sayfada yer almaktadır.<br>
+            Resimlere tıklayarak büyük boyutunu görüntüleyebilirsiniz.
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Profil Fotoğrafı -->
+    <h2>Profil Fotoğrafı</h2>
+
+    <div style="text-align: center; margin: 20px 0;">
+        <a href="profil_buyuk.jpg" target="_blank">
+            <img src="profil.jpg"
+                 alt="Yunus Kuşak - Profil Fotoğrafı"
+                 width="200"
+                 height="200"
+                 class="profil-resim">
+        </a>
+        <p style="color:#555; margin-top:8px; font-size:13px;">
+            Yunus Kuşak — KUSAK LTD Founder
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Galeri -->
+    <h2>Proje &amp; Etkinlik Galerisi</h2>
+
+    <table border="0" cellpadding="15" cellspacing="10" align="center">
+        <tr>
+            <td align="center">
+                <div class="resim-alan">
+                    <a href="kusak_ltd_buyuk.jpg" target="_blank">
+                        <img src="kusak_ltd.jpg"
+                             alt="KUSAK LTD - Çalışma Ortamı"
+                             width="260"
+                             height="180">
+                    </a>
+                    <p>KUSAK LTD — Çalışma Ortamı</p>
+                </div>
+            </td>
+            <td align="center">
+                <div class="resim-alan">
+                    <a href="v13_buyuk.jpg" target="_blank">
+                        <img src="v13.jpg"
+                             alt="KUSAK V13 - HFT Engine"
+                             width="260"
+                             height="180">
+                    </a>
+                    <p>KUSAK V13 — HFT Motoru Geliştirme</p>
+                </div>
+            </td>
+            <td align="center">
+                <div class="resim-alan">
+                    <a href="neta_leo_buyuk.jpg" target="_blank">
+                        <img src="neta_leo.jpg"
+                             alt="NETA LEO - Satellite Network"
+                             width="260"
+                             height="180">
+                    </a>
+                    <p>NETA LEO — Uydu Routing Projesi</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <div class="resim-alan">
+                    <a href="universite_buyuk.jpg" target="_blank">
+                        <img src="universite.jpg"
+                             alt="Erzincan Binali Yıldırım Üniversitesi"
+                             width="260"
+                             height="180">
+                    </a>
+                    <p>Erzincan Binali Yıldırım Üniversitesi</p>
+                </div>
+            </td>
+            <td align="center">
+                <div class="resim-alan">
+                    <a href="van_buyuk.jpg" target="_blank">
+                        <img src="van.jpg"
+                             alt="Van, Türkiye"
+                             width="260"
+                             height="180">
+                    </a>
+                    <p>Van, Türkiye — Memleket</p>
+                </div>
+            </td>
+            <td align="center">
+                <div class="resim-alan">
+                    <a href="hsd_buyuk.jpg" target="_blank">
+                        <img src="hsd.jpg"
+                             alt="HSD EBYÜ Etkinlik"
+                             width="260"
+                             height="180">
+                    </a>
+                    <p>HSD EBYÜ — Etkinlik</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Nasıl Resim Eklerim? -->
+    <h2>Resim Ekleme Rehberi</h2>
+
+    <div class="kart-kutu">
+        <p>
+            <b>1.</b> Resimleri bu HTML dosyasıyla aynı klasöre koyun.<br>
+            <b>2.</b> Dosya adlarını (<b>profil.jpg</b>, <b>kusak_ltd.jpg</b> vb.) kendi resimlerinizle eşleştirin.<br>
+            <b>3.</b> <b>src</b> parametresini dosya adınıza göre güncelleyin.<br><br>
+            <u>Örnek:</u><br>
+            <b>&lt;img src="benim_resim.jpg" alt="Açıklama" width="260" height="180"&gt;</b>
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <p>
+        &copy; 2026 Yunus Kuşak &nbsp;|&nbsp; KUSAK LTD &nbsp;|&nbsp; Tüm Hakları Saklıdır.
+    </p>
+</footer>
+
+</body>
+</html>
