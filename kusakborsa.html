@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yunus Kuşak | KUSAK BORSA</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="site-header">
+    <h1>YUNUS KUŞAK</h1>
+    <p>@KUSAK LTD &nbsp; @YYY</p>
+</div>
+
+<nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hakkimda.html">Hakkımda</a>
+    <a href="resimler.html">Resimler</a>
+    <a href="iletisim.html">İletişim</a>
+    <a href="girisimlerim.html">Girişimlerim</a>
+    <a href="kusakborsa.html">KUSAK BORSA</a>
+</nav>
+
+<div class="container">
+
+    <h2>KUSAK BORSA</h2>
+
+    <div class="kart-kutu">
+        <p>
+            Bu sayfada <b>Project KUSAK</b> yeni nesil HFT mimarisinin detayları
+            ve <b>YYY‑Borsa</b> danışmanlık ekibinin kapsamı yer almaktadır.
+        </p>
+    </div>
+
+    <!-- Hızlı Erişim -->
+    <div class="kart-kutu" style="background-color: #f8fafc;">
+        <p>
+            <b>Hızlı Erişim:</b><br>
+            <a href="#hft">Project KUSAK (HFT)</a> &nbsp;|&nbsp;
+            <a href="#altyapi">Kilitlenmesiz C++ Altyapısı</a> &nbsp;|&nbsp;
+            <a href="#radarlar">OBI ve VPIN</a> &nbsp;|&nbsp;
+            <a href="#dayaniklilik">LEO Mirası ve Dayanıklılık</a> &nbsp;|&nbsp;
+            <a href="#yyy-borsa">YYY‑Borsa Ekibi</a>
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Project KUSAK HFT -->
+    <a name="hft"></a>
+    <h2>Project KUSAK: Yeni Nesil HFT Mimarisi</h2>
+
+    <div class="kart-kutu">
+        <p>
+            <b>"Geleceği Tahmin Etmiyoruz. 'Şimdi'yi İşliyoruz."</b><br><br>
+            Piyasadaki algoritmik ticaret sistemlerinin büyük çoğunluğu, geçmiş fiyat
+            hareketlerine dayalı gecikmeli indikatörler (RSI, MACD) üzerine kuruludur.
+            Project KUSAK ise geçmişi analiz etmez; doğrudan piyasanın kalbine, emir
+            defterinin mikro‑dinamiklerine odaklanır. Londra merkezli Kusak Ltd. bünyesinde
+            geliştirilen bu sistem, anlık likidite anormalliklerini ve kurumsal "balina"
+            hareketlerini nanosaniye hızında tespit edip, fiyat henüz tepki vermeden işleme
+            girmek üzere tasarlanmış saf bir HFT motorudur.
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Kilitlenmesiz Altyapı -->
+    <a name="altyapi"></a>
+    <h2>Kaputun Altındaki Güç: Kilitlenmesiz (Lock‑Free) C++ Altyapısı</h2>
+
+    <div class="kart-kutu">
+        <p>
+            KUSAK, bir Python scripti veya standart bir Node.js botu değildir. Doğrudan
+            donanım seviyesinde çalışan, aracı kütüphaneleri (API wrapper) aradan çıkaran
+            bir mühendislik ürünüdür.
+        </p>
+    </div>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Bileşen</th>
+            <th>Açıklama</th>
+        </tr>
+        <tr>
+            <td><b>Lock‑Free SPSC Mimarisi</b></td>
+            <td>Sistemin kalbinde, veriyi çeken "Producer" ile veriyi işleyip emir gönderen
+            "Consumer" mekanizmalarının birbirini beklemediği, kilitlenmesiz Tek Üretici –
+            Tek Tüketici mimarisi yatar. Bu asenkron yapı, veri darboğazlarını sıfıra indirir.</td>
+        </tr>
+        <tr>
+            <td><b>Doğrudan WebSocket / SSL Tünelleme</b></td>
+            <td>Sistem, Binance ana sunucularına doğrudan bağlanır. Gelen <i>depthUpdate</i>
+            (emir defteri değişimi) paketleri, milisaniyelik gecikmelere mahal vermeden
+            doğrudan RAM üzerinde işlenir.</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- OBI ve VPIN -->
+    <a name="radarlar"></a>
+    <h2>Taktiksel Radarlar: OBI ve VPIN</h2>
+
+    <div class="kart-kutu">
+        <p>
+            KUSAK, piyasa yönünü tahmin etmeye çalışmaz; tahtadaki anormallikleri avlar.
+            Karar mekanizması iki ana kantitatif modele dayanır.
+        </p>
+    </div>
+
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Model</th>
+            <th>Açıklama</th>
+        </tr>
+        <tr>
+            <td><b>OBI (Order Book Imbalance)</b></td>
+            <td>Anlık olarak alıcı ve satıcı kademelerindeki ağırlığı tartar. Belirlenen
+            asimetrik eşik değerleri (örneğin %15'lik ani bir baskı) aşıldığında, sistem
+            tahtadaki kırılımı milisaniyeler önceden tespit ederek pozisyon alır.</td>
+        </tr>
+        <tr>
+            <td><b>VPIN (Volume‑Synchronized Probability of Informed Trading)</b></td>
+            <td>Sadece işlem hacmine bakmaz. Sıradan piyasa katılımcılarının yarattığı
+            "gürültü" ile, içeriden bilgi alan kurumsal yatırımcıların agresif hareketlerini
+            birbirinden ayırır. Bu sayede sahte kırılımlardan (fakeout) korunur.</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- LEO Mirası ve Dayanıklılık -->
+    <a name="dayaniklilik"></a>
+    <h2>Neden KUSAK? LEO Uydu Mirası ve Bağlantı Dayanıklılığı</h2>
+
+    <div class="kart-kutu">
+        <p>
+            Sıradan ticaret botlarını KUSAK mimarisinden ayıran en kritik faktör,
+            kökenleridir. Sistemin bağlantı ve yönlendirme (routing) altyapısı, Alçak Dünya
+            Yörüngesi (LEO) uyduları arasındaki iletişimde yaşanan "Sürekli Topoloji
+            Çöküşü" sorununu çözmek için geliştirilen Ar‑Ge çalışmalarına dayanır.
+        </p>
+        <p>
+            Standart botlar sunucu bağlantısında yaşanan anlık bir paket kaybında çökerken
+            veya donarken; KUSAK, tıpkı uzaydaki uydular arası kopmalara dayanacak şekilde
+            yazıldığı için, agresif "Reconnect" döngüleriyle saniyesinde farklı bir sunucu
+            portuna tutunur ve nanosaniyelik veri akışını kesintisiz sürdürür.
+        </p>
+    </div>
+
+    <p style="text-align:center;">
+        <b>Kusak Ltd. | Saf Mühendislik. Sıfır Gecikme.</b>
+    </p>
+
+    <hr>
+
+    <!-- YYY-Borsa Ekibi -->
+    <a name="yyy-borsa"></a>
+    <h2>YYY‑Borsa Ekibi</h2>
+
+    <div class="kart-kutu">
+        <p>
+            <b>Durum:</b> Aktif<br>
+            <b>Kapsam:</b> Ekip koordinasyonu ile finansal piyasaların analizi, strateji
+            geliştirme ve ticari operasyonların yürütülmesi devam etmektedir.<br><br>
+            YYY‑Borsa, aktif olarak <b>100+ kişiye</b> danışmanlık yapmaktadır.
+        </p>
+    </div>
+
+    <p style="text-align:center;">
+        <a href="#hft">Sayfanın Başına Dön</a>
+    </p>
+
+</div>
+
+<footer>
+    <p>
+        &copy; 2026 Yunus Kuşak &nbsp;|&nbsp; KUSAK LTD &nbsp;|&nbsp; Tüm Hakları Saklıdır.
+    </p>
+</footer>
+
+</body>
+</html>
