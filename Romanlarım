@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yunus Kuşak | Romanlarım</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="site-header">
+    <h1>YUNUS KUŞAK</h1>
+    <p>@KUSAK LTD &nbsp; @YYY</p>
+</div>
+
+<nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hakkimda.html">Hakkımda</a>
+    <a href="resimler.html">Resimler</a>
+    <a href="iletisim.html">İletişim</a>
+    <a href="girisimlerim.html">Girişimlerim</a>
+    <a href="kusak-infra.html">kusak-infra</a>
+    <a href="romanlarim.html">Romanlarım</a>
+</nav>
+
+<div class="container">
+
+    <h2>Romanlarım</h2>
+
+    <!-- Yazar Notu -->
+    <div class="kart-kutu" style="background-color: #f8fafc;">
+        <p>
+            <b>Not:</b> Bu roman anlatım teknikleri tamamen değiştirilip yeniden yazılmıştır.
+            Bu eski anlatım tekniklerine dayalı versiyonudur ve 2023'ten beri yazıyorum.
+            (Bazen 6 ayda 1 sayfa, bazen günde 10 sayfa ilerledi.)
+        </p>
+    </div>
+
+    <hr>
+
+    <h2>UNUTANLAR</h2>
+
+    <h3>BÖLÜM 1</h3>
+
+    <p>
+        Bir salgın insanları unutkanlıkla saran bir kabusun başlangıcını getirdi. Her geçen gün,
+        insanlar insancıl özelliklerini kaybediyor ve <b>Unutanlar</b> adını verdikleri bu yeni
+        varlıklara dönüşüyorlardı.
+    </p>
+
+    <p>
+        Salgın hızla yayıldıkça, Unutanlar hayvansal özellikleri benimsemeye başlıyor ve insanlara
+        daha saldırgan bir şekilde yaklaşıyorlardı. Toplum, Unutanlarla baş etmekte zorlanırken
+        salgın zaman içinde evrimsel bir gerileme sürecine yol açıyor.
+    </p>
+
+    <p>
+        Hükümetin yetersizliğini gören bir grup asker, kontrolü ele alıp durumu düzeltmeye çalışıyor,
+        ancak umut verici bir sonuç alamıyorlar; tam aksine müdahaleleri salgının daha da hızla ve
+        şiddetle yayılmasına neden oluyor.
+    </p>
+
+    <p>
+        İnsanlar, Unutanlar salgınına karşı mücadele verirken, kendi evrimsel gerilemesi ve içsel
+        çatışmalarla yüzleşiyor. Unutanlarla sürüklenen dünyada, hayatta kalma mücadelesi ve
+        insanlığın sınavı başlamıştır.
+    </p>
+
+    <hr>
+
+    <div class="kart-kutu">
+        <p><b>UNUTANLAR</b></p>
+    </div>
+
+    <p>
+        Gün batımıyla birlikte, Van evlerinin tarihi kokusuyla yürüyüşe çıkmak, insanı deforme eden
+        her şeyi uzaklaştırır. Tarihin tozlu sayfalarında yürüyor gibi hissediyordum. Havanın
+        izbeleşmesiyle eve doğru yola koyuldum. Van'ın eski günlerini yakınmadan edemiyordum,
+        birçoklarına göre burası taşradan farksızdı, oysa ki bu kent tekdüze bir kent değil,
+        medeniyetlere başkentlik yapmış bir yerdi burası. İnsanların Van hakkındaki tutumları
+        hicivden ileriye gidemiyor. Yarım kalan tasarılar; Van halkını karalama kağıdı karalamaktan
+        başka bir yere götürmedi. Ahh güzel Van'ın dediklerime insanlar sitem ettiğimi sanır lâkin
+        ben seni sahiplendim, herkes seni yetim ve sahipsiz bırakırken ben sahip oldum sana, sevdim
+        seni…
+    </p>
+
+    <p>
+        Düşüncelerim birbirini yerken, gelen çöp kokusuyla irkildim, hızlıca burnumu tuttum ve
+        uzaklaştım. Hemen iç çektim, güzel Van'ım sen bu sorumsuzluğa asla layık değilsin…
+        derken karanlığın içinden birisi belirmeye başladı, sokağın başından onu gördüğümde,
+        içimde bir burukluk hissettim, kalbim hızla atmaya başladı. Hiçbir şey belli etmeden
+        ona doğru yürüdüm, ondan çok çekiniyordum, bana çok kötülüğü dokunmuştu, elimi uzatıp
+        "Ahh selam! Ne güzel bir denk gelme" dedim, ancak sesimdeki gerginlik her taraftan
+        duyuluyordu. Gözlerini devirerek bana doğru baktı ve "Neden kendi kendine konuşup
+        duruyorsun? Bu seni şizofren gibi gösteriyor, neyse! Ben gidiyorum görüşürüz" dedi ve
+        arkasına bakmadan dönüp gitti… Ne diyeceğimi bilemedim, kalbim sızladı ve yerin
+        pisliğine aldırış etmeden oturdum, neden bana bunu yapıyor demekten kendimi alamadım.
+        Onunla olan eski güzel günler aklıma geldikçe gözlerimden yaşlar akmaya başlardı…
+        Ne oldu da bu hale geldik seninle? Bizi bu hâle getirmek için uğraşanlara bu şansı
+        verdiğin için mutlu musun? Gerçekten. Hava soğumuştu, için titrerken gözlerim kararır.
+        Kendime engel olmaya çalıştım, bedenim bir savaşın eşiğindeydi, gözlerim kapanmak ve
+        kapanmamak arasında bir savaş veriyordu, ellerimi hissedemiyordum, çürümüşlüğü bedenimde
+        hissediyordum, kalkamıyordum. Savaşı kaybettiğimi hissediyordum, çürümüşlüğü bedenimde
+        hissedebiliyordum, hiçliğe doğru gidiyordum, sıfır gibi hiçtim. Gözlerimi toprağa devirerek;
+        canım Van'ım, beni affet sana geliyorum, beni kabul et… "YUNUS…" birisi bana sesleniyordu
+        sanırım, ya da beynim benimle oynuyordu. Ses artmaya başlıyordu "Yunus", "Yunus", "Yunus…"
+        ayak sesleri geliyordu, duyabiliyordum. Artık dayanamıyordum, gözlerimi kapatmaya çalıştım
+        yavaşça.. birisi beni dürtmeye çalışıyordu, hissedebiliyordum ancak bir şey yapamıyordum.
+        "Yunus, kalk lütfen, iyi misin, Yunus Yunus ne olur yanıt ver Yunus!" Hafifçe gözlerimi
+        aralamaya çalıştım, gözlerimi açmakta bu kadar zorlandığımı ilk kez görüyordum, son bir
+        gayretle gözlerimi araladım bu Samet'di. Gözlerime telaşla bakıp "Yunus ne oldu sana kalk
+        hadi" dedi. Koluma girerek beni yavaşça kaldırdı, çürümüşlüğüm ayakta durmama izin
+        vermiyordu, Samet beni yavaşça taşıdı, eve doğru. Kendimi zorlayarak "Samet" dedim,
+        Samet bana baktı, konuşmaya devam ederek "Bunu kimseye anlatma, kimsenin öğrenmesini
+        istemiyorum" dedim. Samet kaşlarını çatarak bana doğru gülümsedi ve "Tabii ki demem"
+        dedi, gözlerinden ruhu okunuyordu, kendi dediğine kalbiyle inanmıyordu, hislerim bugüne
+        asla beni yanıltmadı, o yalan söylüyordu.
+    </p>
+
+    <p>
+        Bahçe kapısına varmıştık, Samet hem beni tutuyor hem de kapıyı açmaya çalışıyordu lâkin
+        bunu beceremiyordu, kapı eskimiş ve paslanmaya yüz tutmuştu, o da benim gibi çürümeye
+        mahkûm kalmıştı, sonunda ise hepten hiç olacaktık… Samet sonunda kapıyı açabilmişti,
+        iç çekerek "Lanet olası kapı!" dedi. Kapıdan geçer geçmez annemin sesiyle irkildim
+        "Yunus!" Annemin Yunus demesiyle elindeki feneri düşürüp bana koşması bir oldu, bana
+        sıkıca sarıldı ve "İyi misin yavrum" dedi. Anneme yalan söylemeyi hiç sevmiyorum ama
+        bu durumda kendimi yalan söylemek zorunda hissettim ve ona "İyiyim annem, sadece
+        tansiyonum düştü" diye yalan söyledim. Samet öksürerek bana doğru baktı ve "Aslında
+        Yunus'un tansiyonu düşmedi, sanırım bizden sakladığı bir şeyler var" dedi, Samet'e
+        asla güvenmemen gerektiğini bu yüzden biliyordum, hemen anneme dönüp "Annem ben
+        iyiyim, sadece tansiyonum düştü, gözlerim karardı, hem hava da karardı, bunları
+        konuşacağımıza içeri girelim" dedim. Samet gülümseyerek bana baktı "O zaman ben
+        gideyim Yunus" dedi, gülümsemesinde hainlik ve samimiyetsizlik vardı. "Görüşürüz"
+        dedim uzatmadan, çünkü onunla konuşmak istemiyordum. Anneme dönüp "Annem yemekte
+        ne var bugün?" dedim. Annem gülümseyerek bana baktı ve "Keledoş yaptım" dedi.
+        Keledoş kelimesini duyunca içten içe sevindim, yemek kültürümüz her geçen gün daha
+        da dejenere oluyordu, yokluğa doğru gidiyordu lâkin bunu düşünmeyi bıraktım. Her ne
+        kadar da herkese göre Keledoş unutulmuş bir yemek olsa da, ben unutmam. Bana göre
+        Keledoş deformeyi engelliyordu, sıradan bir yemek değildi, yılların birikimi onun
+        altında yatar, daha ilk lokmada Keledoş'un ağızda bıraktığı çeşniler, insanı kısa
+        ve güzel bir tarihi yolculuğa götürür.
+    </p>
+
+    <p>
+        Sofraya oturduğumda her zamanki gibi haberleri açtım, son dakika haberlerinde olağan
+        dışı bir haber vardı: "Olacak iş değil, bir anda hafızasını kaybeden pilot yolculara
+        gergin anlar yaşattı." Düşüncelerim tekrardan yoğunlaştı, bir anda mı? Bir insan
+        neden bir anda hafızasını kaybetsin ki? Diye düşünmeye başladım. Annem Keledoş'a
+        yağ dökerken bana baktı ve gülerek "Oğlum sende hep gerginsin, azıcık mutlu ol" dedi.
+        Ben de anneme bakarak "Annem, sadece çok düşünceliyim" dedim. Annem Keledoş'u bana
+        uzattı, ben de hızlıca alıp ekmeği bandırıp yemeye başladım. Haberleri izlemeye devam
+        ederken, hosteslerin ve çoğu yolcunun hafızasını kaybetmeye başladığını gördüm. Bu şey
+        de neyin nesiydi? Bulaşıcı bir hastalık mıydı? Yoksa önemsiz bir şey miydi?
+    </p>
+
+    <hr>
+
+    <p style="text-align: center; color: #555;">
+        <i>— BÖLÜM 1 SONU —</i>
+    </p>
+
+    <p style="text-align: center;">
+        <a href="index.html">[ Ana Sayfaya Dön ]</a>
+    </p>
+
+</div>
+
+<footer>
+    <p>
+        &copy; 2026 Yunus Kuşak &nbsp;|&nbsp; KUSAK LTD &nbsp;|&nbsp; Tüm Hakları Saklıdır.
+    </p>
+</footer>
+
+</body>
+</html>
