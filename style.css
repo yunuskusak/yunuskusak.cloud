@@ -1,9 +1,3 @@
-/* ==============================
-   KİŞİSEL WEB SİTESİ - style.css
-   Sade, profesyonel, derste işlenen özelliklerle
-   ============================== */
-
-/* --- Genel Sayfa --- */
 body {
     background-color: #ffffff;
     color: #2c3e50;
@@ -13,7 +7,6 @@ body {
     padding: 0;
 }
 
-/* --- Üst Başlık Alanı --- */
 .site-header {
     background-color: #1a3c5e;
     padding: 24px;
@@ -34,7 +27,6 @@ body {
     margin: 0;
 }
 
-/* --- Menü --- */
 nav {
     background-color: #f4f6f9;
     padding: 0;
@@ -61,7 +53,6 @@ nav a:hover {
     color: #ffffff;
 }
 
-/* --- İçerik Alanı --- */
 .container {
     width: 980px;
     margin: 30px auto;
@@ -70,7 +61,6 @@ nav a:hover {
     border: 1px solid #dce1e8;
 }
 
-/* --- Başlıklar --- */
 h2 {
     color: #1a3c5e;
     font-size: 22px;
@@ -87,14 +77,12 @@ h3 {
     margin-bottom: 10px;
 }
 
-/* --- Yatay Çizgi --- */
 hr {
     border: none;
     border-top: 1px solid #e0e6ed;
     margin: 28px 0;
 }
 
-/* --- Bağlantılar --- */
 a {
     color: #1a3c5e;
     text-decoration: underline;
@@ -104,14 +92,12 @@ a:hover {
     color: #c0392b;
 }
 
-/* --- Liste --- */
 ul, ol {
     line-height: 1.9;
     padding-left: 25px;
     margin: 10px 0;
 }
 
-/* --- Tablolar (genel) --- */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -146,7 +132,6 @@ table tr:hover td {
     background-color: #eef3f8;
 }
 
-/* --- Form Elemanları --- */
 .form-satir {
     margin-bottom: 18px;
 }
@@ -183,7 +168,6 @@ table tr:hover td {
     resize: vertical;
 }
 
-/* --- Butonlar --- */
 input[type="submit"],
 input[type="reset"] {
     background-color: #1a3c5e;
@@ -207,7 +191,6 @@ input[type="submit"]:hover {
     background-color: #0f2a44;
 }
 
-/* --- Checkbox / Radio --- */
 .form-satir input[type="checkbox"],
 .form-satir input[type="radio"] {
     margin-right: 6px;
@@ -217,7 +200,6 @@ input[type="submit"]:hover {
     line-height: 2;
 }
 
-/* --- Bilgi Kartları --- */
 .kart-kutu {
     background-color: #f5f7fa;
     border: 1px solid #cfd8dc;
@@ -231,7 +213,6 @@ input[type="submit"]:hover {
     line-height: 1.8;
 }
 
-/* --- Resim Galerisi Alanı --- */
 .resim-alan {
     background-color: #ffffff;
     border: 1px solid #cfd8dc;
@@ -258,7 +239,6 @@ input[type="submit"]:hover {
     border: 1px solid #b0bec5;
 }
 
-/* --- iframe Çerçevesi --- */
 .iframe-sarici {
     border: 1px solid #b0bec5;
     margin: 20px 0;
@@ -266,14 +246,12 @@ input[type="submit"]:hover {
     padding: 6px;
 }
 
-/* --- Profil Resmi --- */
 .profil-resim {
     border: 3px solid #1a3c5e;
     padding: 3px;
     background-color: #ffffff;
 }
 
-/* --- Hızlı Bilgiler Tablosu --- */
 .bilgi-tablosu {
     width: 100%;
     border: 1px solid #b0bec5;
@@ -299,7 +277,6 @@ input[type="submit"]:hover {
     color: #2c3e50;
 }
 
-/* --- Girişimler Tablosu --- */
 .girisim-tablosu {
     width: 100%;
     border: 1px solid #b0bec5;
@@ -332,7 +309,6 @@ input[type="submit"]:hover {
     background-color: #eef3f8;
 }
 
-/* --- Son Gelişmeler Listesi --- */
 ul.gelismeler {
     list-style-type: square;
     color: #2c3e50;
@@ -345,7 +321,6 @@ ul.gelismeler li b {
     color: #1a3c5e;
 }
 
-/* --- Alt Bilgi --- */
 footer {
     background-color: #f4f6f9;
     border-top: 2px solid #cfd8dc;
