@@ -339,3 +339,73 @@ footer a {
 footer a:hover {
     color: #c0392b;
 }
+/* --- TEŞEKKÜRLER BÖLÜMÜ (özel tema) --- */
+.tesekkur-bolum {
+    /* Koyu arka plan (genel temadan farklı) */
+    background-color: #2b2b2b;
+    /* Yazı rengi açık gri */
+    color: #e0e0e0;
+    /* İç boşluk */
+    padding: 30px 20px;
+    /* Üst boşluk */
+    margin-top: 40px;
+    /* Hafif yuvarlatılmış köşeler (derste yok ama izin ver) - istersen sil, border ile de olur */
+    border: 1px solid #444444;
+    border-radius: 0px; /* Düz köşe, istersen 5px yapabilirsin, zorunlu değil */
+    text-align: center;
+}
+
+.tesekkur-bolum h2 {
+    /* Başlık rengi altın sarısı */
+    color: #e6b800;
+    font-size: 22px;
+    border-bottom: none; /* Alt çizgi olmasın */
+    margin-bottom: 20px;
+    padding-bottom: 0;
+}
+
+.tesekkur-bolum h3 {
+    /* Alt başlık rengi */
+    color: #e6b800;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tesekkur-bolum p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.tesekkur-bolum .foto-cerceve {
+    /* Fotoğrafın etrafındaki çerçeve */
+    display: inline-block;
+    border: 3px solid #e6b800;
+    padding: 5px;
+    background-color: #1e1e1e;
+    margin-bottom: 15px;
+}
+
+.tesekkur-bolum .foto-cerceve img {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.tesekkur-bolum .isim-listesi {
+    /* İsimlerin listesi */
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.tesekkur-bolum .isim-listesi li {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 5px 12px;
+    background-color: #3a3a3a;
+    border-left: 3px solid #e6b800;
+    font-size: 13px;
+    color: #cccccc;
+}
