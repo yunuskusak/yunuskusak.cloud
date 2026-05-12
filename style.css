@@ -339,29 +339,29 @@ footer a {
 footer a:hover {
     color: #c0392b;
 }
-/* --- TEŞEKKÜRLER BÖLÜMÜ (sadece dersteki özelliklerle) --- */
+/* --- TEŞEKKÜRLER BÖLÜMÜ (canlandırılmış, dersteki özelliklerle) --- */
 .tesekkur-bolum {
     padding: 40px 20px;
-    border-top: 2px solid #e0e6ed;
-    border-bottom: 2px solid #e0e6ed;
+    border-top: 3px solid #1a3c5e;   /* mavi çizgi (daha canlı) */
+    border-bottom: 3px solid #1a3c5e;
     background-color: #ffffff;
     text-align: center;
     margin-top: 40px;
 }
 
 .tesekkur-bolum h2 {
-    color: #2c3e50;
-    font-size: 24px;
+    color: #1a3c5e;
+    font-size: 26px;
     border-bottom: none;
     margin-bottom: 25px;
     padding-bottom: 0;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .tesekkur-bolum h3 {
-    color: #4a5568;
+    color: #1a3c5e;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: bold;
     margin-top: 30px;
     margin-bottom: 15px;
 }
@@ -369,7 +369,7 @@ footer a:hover {
 .tesekkur-bolum p {
     font-size: 15px;
     line-height: 1.9;
-    color: #4a5568;
+    color: #2c3e50;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -380,8 +380,8 @@ footer a:hover {
     display: inline-block;
     width: 180px;
     height: 180px;
-    border: 3px solid #1a3c5e;      /* Mavi çerçeve (sitene uyumlu) */
-    padding: 3px;
+    border: 4px solid #1a3c5e;
+    padding: 4px;
     background-color: #ffffff;
     margin-bottom: 20px;
 }
@@ -392,18 +392,23 @@ footer a:hover {
     display: block;
 }
 
+/* İsim listesi: yan yana, eşit genişlik */
 .tesekkur-bolum .isim-listesi {
     list-style: none;
     padding-left: 0;
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 800px;
     text-align: center;
-    line-height: 2.5;
+    line-height: 2.2;
 }
 
 .tesekkur-bolum .isim-listesi li {
     display: inline-block;
-    margin: 0 8px;
+    width: 150px;                /* Her isim için sabit genişlik */
+    margin: 4px 6px;
     font-size: 14px;
-    color: #5a6a7a;
+    font-weight: bold;
+    color: #1a3c5e;
+    text-align: center;
+    vertical-align: top;
 }
