@@ -339,74 +339,38 @@ footer a {
 footer a:hover {
     color: #c0392b;
 }
-/* --- TEŞEKKÜRLER BÖLÜMÜ (temiz tablo ile) --- */
+/* --- TEŞEKKÜRLER BÖLÜMÜ (temel) --- */
 .tesekkur-bolum {
-    padding: 40px 20px;
+    padding: 30px 20px;
     border-top: 3px solid #1a3c5e;
     border-bottom: 3px solid #1a3c5e;
-    background-color: #f8fafc;           /* hafif mavimsi arka plan */
+    background-color: #ffffff;
     text-align: center;
     margin-top: 40px;
 }
 
 .tesekkur-bolum h2 {
     color: #1a3c5e;
-    font-size: 26px;
-    border-bottom: none;
-    margin-bottom: 25px;
-    padding-bottom: 0;
-    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .tesekkur-bolum h3 {
     color: #1a3c5e;
     font-size: 18px;
-    font-weight: bold;
-    margin-top: 30px;
+    margin-top: 25px;
     margin-bottom: 15px;
 }
 
 .tesekkur-bolum p {
     font-size: 15px;
-    line-height: 1.9;
     color: #2c3e50;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
 }
 
 .tesekkur-bolum .foto-kose {
-    display: inline-block;
-    width: 180px;
-    height: 180px;
     border: 4px solid #1a3c5e;
     padding: 4px;
     background-color: #ffffff;
-    margin-bottom: 20px;
-}
-
-.tesekkur-bolum .foto-kose img {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-/* İSİM TABLOSU */
-.isim-tablosu {
-    margin: 20px auto;
-    width: 90%;
-    border-collapse: collapse;
-    background-color: transparent;   /* arka plan üstteki gibi kalsın */
-}
-
-.isim-tablosu td {
-    width: 16.66%;                    /* 100 / 6 = 16.66% */
-    padding: 10px 5px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: bold;
-    color: #1a3c5e;
-    border: none;                     /* kenar çizgisi olmasın */
-    vertical-align: middle;
 }
