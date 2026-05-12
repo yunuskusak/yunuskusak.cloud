@@ -339,12 +339,12 @@ footer a {
 footer a:hover {
     color: #c0392b;
 }
-/* --- TEŞEKKÜRLER BÖLÜMÜ (canlandırılmış, dersteki özelliklerle) --- */
+/* --- TEŞEKKÜRLER BÖLÜMÜ (temiz tablo ile) --- */
 .tesekkur-bolum {
     padding: 40px 20px;
-    border-top: 3px solid #1a3c5e;   /* mavi çizgi (daha canlı) */
+    border-top: 3px solid #1a3c5e;
     border-bottom: 3px solid #1a3c5e;
-    background-color: #ffffff;
+    background-color: #f8fafc;           /* hafif mavimsi arka plan */
     text-align: center;
     margin-top: 40px;
 }
@@ -392,23 +392,21 @@ footer a:hover {
     display: block;
 }
 
-/* İsim listesi: yan yana, eşit genişlik */
-.tesekkur-bolum .isim-listesi {
-    list-style: none;
-    padding-left: 0;
+/* İSİM TABLOSU */
+.isim-tablosu {
     margin: 20px auto;
-    max-width: 800px;
-    text-align: center;
-    line-height: 2.2;
+    width: 90%;
+    border-collapse: collapse;
+    background-color: transparent;   /* arka plan üstteki gibi kalsın */
 }
 
-.tesekkur-bolum .isim-listesi li {
-    display: inline-block;
-    width: 150px;                /* Her isim için sabit genişlik */
-    margin: 4px 6px;
+.isim-tablosu td {
+    width: 16.66%;                    /* 100 / 6 = 16.66% */
+    padding: 10px 5px;
+    text-align: center;
     font-size: 14px;
     font-weight: bold;
     color: #1a3c5e;
-    text-align: center;
-    vertical-align: top;
+    border: none;                     /* kenar çizgisi olmasın */
+    vertical-align: middle;
 }
