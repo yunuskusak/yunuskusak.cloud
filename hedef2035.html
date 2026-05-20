@@ -1,0 +1,332 @@
+<html><head>
+    <title>Yunus Kuşak | Hedef 2035</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+</head>
+<body>
+
+<div class="site-header">
+    <h1>YUNUS KUŞAK</h1>
+    <p>@KUSAK LTD &nbsp; @YYY</p>
+</div>
+
+<nav>
+    <a href="index.html">Ana Sayfa</a>
+    <a href="hakkimda.html">Hakkımda</a>
+    <a href="resimler.html">Resimler</a>
+    <a href="iletisim.html">İletişim</a>
+    <a href="girisimlerim.html">Girişimlerim</a>
+    <a href="kusak-infra.html">kusak-infra</a>
+    <a href="romanlarim.html">Romanlarım</a>
+    <a href="hedef2035.html">Hedef 2035</a>
+</nav>
+
+<div class="container">
+
+    <h2>Hedef 2035</h2>
+
+    <div class="kart-kutu">
+        <p>
+            Hedefimiz 2035 yılında Van'da bir <b>uzay ve savunma sanayisi şirketi</b> kurmak.
+            Bu, devasa boyutlarda bir yatırım gerektiriyor. Tesis bir anda değil, kademeli olarak
+            büyüyecek. Önce ufak bir ekip kurulacak, ardından <b>kusak-infra</b> projemizin
+            maddi dönüşüyle birlikte adım adım inşa edilecek.
+        </p>
+    </div>
+
+    <hr>
+
+    <h3>Her ay %20 büyüme ile şirketimizi 10 yılda nerelere taşırız?</h3>
+
+    <p>
+        Her ayın sonunda <b>10.000 TL</b> yatırım yapıldığını ve bu yatırımın aylık %20 getiri
+        sağladığını varsayalım. 10 yıl (120 ay) sonunda elde edilecek birikimi
+        <b>gelecek değer formülüyle</b> hesaplayalım.
+    </p>
+
+    <div class="kart-kutu">
+        <p>
+            <b>Formül (ay sonu ödemeli annüite):</b><br>
+            FV = P × [ (1 + r)<sup>n</sup> – 1 ] / r
+        </p>
+        <p>
+            Burada:<br>
+            P = 10.000 TL (aylık yatırım)<br>
+            r = 0,20 (aylık %20 faiz)<br>
+            n = 120 ay<br>
+        </p>
+    </div>
+
+    <!-- ===== BİRİKİM GRAFİĞİ ===== -->
+    <h3>Canlı Büyüme Grafiği</h3>
+
+    <div style="padding: 1.5rem 1rem 1rem; font-family: Arial, sans-serif;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 1.5rem;">
+            <div style="background: #f5f7fa; border: 1px solid #cfd8dc; padding: 0.85rem 1rem;">
+                <div style="font-size: 12px; color: #555;">Aylık ödeme (P)</div>
+                <div style="font-size: 18px; font-weight: bold; color: #2c3e50;">10.000 TL</div>
+            </div>
+            <div style="background: #f5f7fa; border: 1px solid #cfd8dc; padding: 0.85rem 1rem;">
+                <div style="font-size: 12px; color: #555;">Aylık getiri (r)</div>
+                <div style="font-size: 18px; font-weight: bold; color: #2c3e50;">%20</div>
+            </div>
+            <div style="background: #f5f7fa; border: 1px solid #cfd8dc; padding: 0.85rem 1rem;">
+                <div style="font-size: 12px; color: #555;">Birikim (FV)</div>
+                <div style="font-size: 18px; font-weight: bold; color: #1D9E75;" id="fv-display">0 TL</div>
+            </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 1rem;">
+            <button id="playBtn1" style="background: transparent; border: 1px solid #90a4ae; padding: 6px 18px; font-size: 14px; cursor: pointer; color: #2c3e50; font-family: Arial, sans-serif;">Başlat</button>
+            <button id="resetBtn1" style="background: transparent; border: 1px solid #90a4ae; padding: 6px 14px; font-size: 14px; cursor: pointer; color: #2c3e50; font-family: Arial, sans-serif;">↺</button>
+            <div style="flex: 1; height: 4px; background: #e0e6ed; overflow: hidden;">
+                <div id="progress1" style="height: 100%; background: #1D9E75; width: 0%;"></div>
+            </div>
+            <div style="font-size: 13px; color: #555; min-width: 90px; text-align: right;" id="month-label1">Ay 0 / 120</div>
+        </div>
+
+        <div style="position: relative; height: 300px; margin-bottom: 1.25rem;">
+            <canvas id="chartBirikim" style="width: 932px; height: 300px; display: block; box-sizing: border-box;" width="1864" height="600"></canvas>
+        </div>
+
+        <div style="background: #f5f7fa; border: 1px solid #cfd8dc; padding: 0.85rem 1rem; font-size: 13px; color: #555; line-height: 1.8;">
+            <code style="font-family: Courier New, monospace; color: #2c3e50; font-size: 13px;">FV = P × [(1+r)ⁿ − 1] / r</code><br>
+            <code style="font-family: Courier New, monospace; color: #2c3e50; font-size: 13px;">= 10.000 × [(1,20)¹²⁰ − 1] / 0,20</code><br>
+            <code style="font-family: Courier New, monospace; color: #2c3e50; font-size: 13px;">≈ <strong style="color:#1D9E75">158,7 Trilyon TL</strong></code>
+        </div>
+    </div>
+
+    <script>
+    (function(){
+        const P = 10000, r = 0.20, N = 120;
+        function fv(n) { return P * (Math.pow(1 + r, n) - 1) / r; }
+        function formatTL(val) {
+            if (val >= 1e12) return (val / 1e12).toFixed(1) + ' Trilyon TL';
+            if (val >= 1e9) return (val / 1e9).toFixed(1) + ' Milyar TL';
+            if (val >= 1e6) return (val / 1e6).toFixed(1) + ' Milyon TL';
+            return Math.round(val).toLocaleString('tr-TR') + ' TL';
+        }
+        const labels = Array.from({length: N+1}, (_, i) => i % 12 === 0 ? 'Yıl ' + i/12 : '');
+        const fullData = Array.from({length: N+1}, (_, i) => i === 0 ? 0 : fv(i));
+        const ctx = document.getElementById('chartBirikim').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Birikim (TL)',
+                    data: Array(N+1).fill(null),
+                    borderColor: '#1D9E75',
+                    backgroundColor: 'rgba(29,158,117,0.08)',
+                    borderWidth: 2,
+                    pointRadius: 0,
+                    fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { ticks: { font: { size: 11 }, color: '#888', callback: (v, i) => i % 12 === 0 ? 'Yıl ' + i/12 : '' }, grid: { color: 'rgba(0,0,0,0.06)' } },
+                    y: { ticks: { font: { size: 11 }, color: '#888', callback: v => { if(v>=1e12) return (v/1e12).toFixed(0)+'T'; if(v>=1e9) return (v/1e9).toFixed(0)+'Mrd'; if(v>=1e6) return (v/1e6).toFixed(0)+'M'; return v; } }, grid: { color: 'rgba(0,0,0,0.06)' } }
+                }
+            }
+        });
+        let currentMonth = 0, running = false, timer = null;
+        const playBtn = document.getElementById('playBtn1'), resetBtn = document.getElementById('resetBtn1');
+        const progressEl = document.getElementById('progress1'), monthLabel = document.getElementById('month-label1');
+        const fvDisplay = document.getElementById('fv-display');
+        function step() {
+            if (currentMonth > N) { running = false; playBtn.textContent = 'Yeniden'; clearInterval(timer); return; }
+            chart.data.datasets[0].data[currentMonth] = fullData[currentMonth];
+            chart.update('none');
+            progressEl.style.width = (currentMonth / N * 100) + '%';
+            monthLabel.textContent = 'Ay ' + currentMonth + ' / ' + N;
+            fvDisplay.textContent = formatTL(fullData[currentMonth]);
+            currentMonth++;
+        }
+        function start() { if (currentMonth > N) { reset(); return; } running = true; playBtn.textContent = 'Duraklat'; timer = setInterval(step, 28); }
+        function pause() { running = false; clearInterval(timer); playBtn.textContent = 'Devam'; }
+        function reset() { clearInterval(timer); running = false; currentMonth = 0; chart.data.datasets[0].data = Array(N+1).fill(null); chart.update('none'); progressEl.style.width = '0%'; monthLabel.textContent = 'Ay 0 / 120'; fvDisplay.textContent = '0 TL'; playBtn.textContent = 'Başlat'; }
+        playBtn.addEventListener('click', () => { running ? pause() : start(); });
+        resetBtn.addEventListener('click', reset);
+    })();
+    </script>
+
+    <hr>
+
+    <!-- ===== NVIDIA KARŞILAŞTIRMA GRAFİĞİ ===== -->
+    <h3>NVIDIA Büyüme Karşılaştırması</h3>
+
+    <div class="kart-kutu">
+        <p>
+            Bir şirketin sıfırdan trilyonluk değere ulaşması imkânsız değildir.
+            <b>NVIDIA</b>, 1999'da yalnızca <b>0,56 milyar dolar</b> piyasa değeriyle başladı
+            ve 2025 yılına gelindiğinde <b>4,53 trilyon doları</b> aşarak dünyanın en değerli
+            şirketi oldu. Aşağıda bu büyümenin animasyonlu grafiğini izleyebilirsiniz.
+        </p>
+    </div>
+
+    <div style="padding: 1.25rem 1rem 0.5rem; font-family: Arial, sans-serif;">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 1rem;">
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <button id="playBtn2" style="background: transparent; border: 1px solid #90a4ae; padding: 6px 16px; font-size: 13px; cursor: pointer; color: #2c3e50;">Başlat</button>
+                <button id="resetBtn2" style="background: transparent; border: 1px solid #90a4ae; padding: 6px 14px; font-size: 13px; cursor: pointer; color: #2c3e50;">↺</button>
+                <select id="speedSel2" style="font-size: 13px; padding: 4px 8px; border: 1px solid #90a4ae; background: #fff; color: #2c3e50;">
+                    <option value="1400">Yavaş</option>
+                    <option value="650" selected="">Normal</option>
+                    <option value="280">Hızlı</option>
+                    <option value="80">Çok hızlı</option>
+                </select>
+            </div>
+            <div style="display: flex; gap: 16px;">
+                <div style="text-align: right;">
+                    <div style="font-size: 11px; color: #555;">Piyasa değeri</div>
+                    <div id="cur-mc" style="font-size: 18px; font-weight: bold; color: #534AB7;">—</div>
+                </div>
+                <div style="text-align: right;">
+                    <div style="font-size: 11px; color: #555;">Yıl</div>
+                    <div id="cur-yr" style="font-size: 18px; font-weight: bold; color: #2c3e50;">—</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="height: 4px; background: #e0e6ed; margin-bottom: 0.75rem; overflow: hidden;">
+            <div id="prog2" style="height: 100%; background: #7F77DD; width: 0%;"></div>
+        </div>
+
+        <div style="position: relative; height: 340px;">
+            <canvas id="chartNVIDIA" style="width: 932px; height: 340px; display: block; box-sizing: border-box;" width="1864" height="680"></canvas>
+        </div>
+
+        <div id="event-row" style="margin-top: 0.75rem; min-height: 32px; display: flex; align-items: center; gap: 8px;">
+            <span id="event-badge" style="font-size: 11px; padding: 3px 12px; background: #f5f7fa; color: #555;">Başlatmak için Başlat'a bas</span>
+        </div>
+    </div>
+
+    <script>
+    (function(){
+        const allData = [
+            {yr:1999, mc:0.56, ev:"IPO — $562M piyasa değeri", up:true},
+            {yr:2000, mc:7.2, ev:"Dot-com balonu zirvesi", up:true},
+            {yr:2001, mc:3.5, ev:"Dot-com çöküşü başlar", up:false},
+            {yr:2002, mc:1.82, ev:"Teknoloji krizi dibi", up:false},
+            {yr:2003, mc:3.76, ev:"Toparlanma dönemi", up:true},
+            {yr:2004, mc:3.91, ev:"Gaming GPU dönemi", up:true},
+            {yr:2005, mc:6.27, ev:"GeForce egemenliği", up:true},
+            {yr:2006, mc:13.16, ev:"GPU işlemci devrimi", up:true},
+            {yr:2007, mc:18.91, ev:"CUDA platformu lansmanı", up:true},
+            {yr:2008, mc:4.34, ev:"Global finans krizi", up:false},
+            {yr:2009, mc:10.37, ev:"Kriz sonrası toparlanma", up:true},
+            {yr:2010, mc:8.95, ev:"Rekabet baskısı", up:false},
+            {yr:2011, mc:8.45, ev:"Mobile rekabeti artıyor", up:false},
+            {yr:2012, mc:7.65, ev:"Düşük büyüme dönemi", up:false},
+            {yr:2013, mc:9.10, ev:"Yeniden canlanma", up:true},
+            {yr:2014, mc:10.89, ev:"Deep learning fark edildi", up:true},
+            {yr:2015, mc:17.73, ev:"AI chip talebi başlıyor", up:true},
+            {yr:2016, mc:57.52, ev:"AlphaGo — GPU talebi patlar", up:true},
+            {yr:2017, mc:117.27, ev:"Kripto madencilik + AI dalgası", up:true},
+            {yr:2018, mc:81.42, ev:"Kripto çöküşü, düşüş", up:false},
+            {yr:2019, mc:144.02, ev:"Veri merkezi ivmesi", up:true},
+            {yr:2020, mc:323.24, ev:"Pandemi + AI hızlanma", up:true},
+            {yr:2021, mc:735.86, ev:"Metaverse & GPU kıtlığı", up:true},
+            {yr:2022, mc:359.50, ev:"Faiz artışı + teknoloji krizi", up:false},
+            {yr:2023, mc:1220, ev:"ChatGPT — AI süper döngüsü başlar", up:true},
+            {yr:2024, mc:3290, ev:"H100 GPU kıtlığı — lider konum", up:true},
+            {yr:2025, mc:4530, ev:"$4.53 Trilyon — dünyanın 1. şirketi", up:true},
+        ];
+        const labels = allData.map(d => d.yr);
+        function fmtMC(v) { if(v >= 1e12) return '$'+(v/1e12).toFixed(2)+' Trilyon'; if(v >= 1e9) return '$'+(v/1e9).toFixed(2)+' Milyar'; return '$'+v.toFixed(2)+'B'; }
+        function fmtVal(billions) { if(billions >= 1000) return '$'+(billions/1000).toFixed(2)+' Trilyon'; return '$'+billions.toFixed(2)+' Milyar'; }
+
+        const ctx = document.getElementById('chartNVIDIA').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: Array(allData.length).fill(null),
+                    borderColor: '#7F77DD',
+                    backgroundColor: 'rgba(127,119,221,0.08)',
+                    borderWidth: 2.5,
+                    pointRadius: 0,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: '#534AB7',
+                    fill: true,
+                    tension: 0.35,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                animation: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    x: { ticks: { color: '#888', font: { size: 11 }, callback: (v, i) => (i % 4 === 0 || i === allData.length - 1) ? labels[i] : '' }, grid: { color: 'rgba(0,0,0,0.06)' } },
+                    y: { type: 'logarithmic', min: 0.3, ticks: { color: '#888', font: { size: 11 }, callback: v => { if(v===0.5) return '$0.5B'; if(v===1) return '$1B'; if(v===10) return '$10B'; if(v===100) return '$100B'; if(v===1000) return '$1T'; if(v===5000) return '$5T'; return ''; } }, grid: { color: 'rgba(0,0,0,0.06)' } }
+                }
+            }
+        });
+
+        let idx = -1, running = false, timer = null;
+        const playBtn = document.getElementById('playBtn2'), resetBtn = document.getElementById('resetBtn2');
+        const speedSel = document.getElementById('speedSel2');
+        const progEl = document.getElementById('prog2'), curMc = document.getElementById('cur-mc');
+        const curYr = document.getElementById('cur-yr'), badge = document.getElementById('event-badge');
+
+        function render(i) {
+            const d = allData[i];
+            chart.data.datasets[0].data[i] = d.mc;
+            chart.update('none');
+            curMc.textContent = fmtVal(d.mc);
+            curYr.textContent = d.yr;
+            progEl.style.width = ((i+1)/allData.length*100)+'%';
+            badge.textContent = d.ev;
+            badge.style.background = d.up ? '#EEEDFE' : '#FAECE7';
+            badge.style.color = d.up ? '#3C3489' : '#712B13';
+        }
+
+        function step() { idx++; if (idx >= allData.length) { running = false; clearInterval(timer); playBtn.textContent = 'Yeniden'; return; } render(idx); }
+        function start() { if (idx >= allData.length - 1) { reset(); return; } running = true; playBtn.textContent = 'Duraklat'; timer = setInterval(step, +speedSel.value); }
+        function pause() { running = false; clearInterval(timer); playBtn.textContent = 'Devam'; }
+        function reset() { clearInterval(timer); running = false; idx = -1; chart.data.datasets[0].data = Array(allData.length).fill(null); chart.update('none'); progEl.style.width = '0%'; curMc.textContent = '—'; curYr.textContent = '—'; badge.textContent = "Başlatmak için Başlat'a bas"; badge.style.background = '#f5f7fa'; badge.style.color = '#555'; playBtn.textContent = 'Başlat'; }
+
+        playBtn.addEventListener('click', () => running ? pause() : start());
+        resetBtn.addEventListener('click', reset);
+        speedSel.addEventListener('change', () => { if(running) { clearInterval(timer); timer = setInterval(step, +speedSel.value); } });
+    })();
+    </script>
+
+    <hr>
+
+    <h3>Yol Haritası</h3>
+    <ol>
+        <li><b>2025–2026:</b> kusak-infra ile ilk maddi dönüşlerin sağlanması.</li>
+        <li><b>2026–2027:</b> Ufak bir Ar‑Ge ekibiyle savunma/uzay projelerine başlangıç.</li>
+        <li><b>2027–2030:</b> İlk prototiplerin testleri ve patent başvuruları.</li>
+        <li><b>2030–2035:</b> Tesisleşme, üretim bandı kurulumu ve ilk ihracat.</li>
+    </ol>
+
+    <p>
+        Tüm bu hedefler, disiplinli birikim ve akıllı yatırım stratejisiyle mümkün olacak.
+        Hayal değil; planlı, ölçülü ve sürdürülebilir bir büyüme hedefliyoruz.
+    </p>
+
+    <p style="text-align: center;">
+        <a href="index.html">[ Ana Sayfaya Dön ]</a>
+    </p>
+
+</div>
+
+<footer>
+    <p>
+        © 2026 Yunus Kuşak &nbsp;|&nbsp; KUSAK LTD &nbsp;|&nbsp; Tüm Hakları Saklıdır.
+    </p>
+</footer>
+
+
+</body></html>
